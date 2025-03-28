@@ -1,0 +1,6 @@
+datasources:9fd55d94ac8021b49b0d672c2648f6c71b93b250
+commandlineoptions:98a033e544dfc9bd2e995d347fd3e662a2406dc8
+suitesfrom:no-suites-from-option
+file:6b814fac60b8ebeab44563f8669e2e7bcfc4828f
+--suite Tests.Login
+--suite Tests.Onboard
