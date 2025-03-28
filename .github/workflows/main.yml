@@ -40,28 +40,27 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
   
-      - name: Install allure
-        if: always()
+      - name: Install Allure CLI
         run: |
           curl -o allure-2.13.8.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz \
           && sudo tar -zxvf allure-2.13.8.tgz -C /opt/ \
           && sudo ln -s /opt/allure-2.13.8/bin/allure /usr/bin/allure \
           && allure --version
 
-      - name: Run robot
-        id: robot
+      - name: Run Robot Tests
         continue-on-error: true
         run: |
           pabot --ordering .pabotsuitenames --processes 2 --listener allure_robotframework:allure-results --output output.xml -v run_number:$GITHUB_RUN_ID ./${{ github.event.inputs.path }}/tests/
           
-      - name: Generate Allure Report
+      - name: Generate Allure Report to /docs
         run: |
-          allure generate allure-results --clean -o allure-report
+          rm -rf docs
+          allure generate allure-results --clean -o docs
 
-      - name: Deploy Allure Report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: allure-report
-          force_orphan: true
+      - name: Commit Allure Report to /docs
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add docs
+          git commit -m "Update Allure Report [skip ci]" || echo "No changes to commit"
+          git push
