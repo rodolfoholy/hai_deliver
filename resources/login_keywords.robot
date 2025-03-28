@@ -34,7 +34,7 @@ And he went to the log in screen
 When he insert the phone number to log in
     @{phone_num}    Get Webelements                     xpath=${edit_text}
     Log     ${phone_num}
-    Handle Element Based On Locator     ${phone_num}[0]
+    Click Element                       ${phone_num}[0]
     Input Text                          ${phone_num}[0]        5184862436
     Hide Keyboard
     Handle Element Based On Locator     accessibility_id=Continue
@@ -43,10 +43,10 @@ And he insert the OTP code
     Wait Until Page Contains            Please verify your account      8
     @{otp_code}                         Get Webelements              xpath=//android.widget.TextView
     Log     ${otp_code}
-    Handle Element Based On Locator     ${otp_code}[3]
-    @{otp_num}    Get Webelements                     xpath=${edit_text}
+    Click Element                       ${otp_code}[3]
+    @{otp_num}    Get Webelements       xpath=${edit_text}
     Input Text                          ${otp_num}[0]        112233
-    Handle Element Based On Locator     Verify
+    Click Element                       Verify
     Wait Until Page Contains            Estimates
     Wait Until Element Is Visible       accessibility_id=Clients
 

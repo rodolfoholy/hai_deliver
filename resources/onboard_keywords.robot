@@ -52,7 +52,7 @@ And do the sign up
     Wait Until Page Contains            Price Location
     @{price_location}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${price_location}[0]        Irvine
-    Handle Element Based On Locator     Irvine, CA, USA
+    Click Text                          Irvine, CA, USA
     Wait Until Page Contains            Markup
     Handle Element Based On Locator     accessibility_id=Continue
     Wait Until Page Contains            Bathroom Remodel
@@ -73,17 +73,17 @@ And executes the login for a onboard user
     Wait Until Page Contains            Login methods:      8
     @{phone_num}    Get Webelements                     xpath=${edit_text}
     Log     ${phone_num}
-    Handle Element Based On Locator     ${phone_num}[0]
+    Click Element                       ${phone_num}[0]
     Input Text                          ${phone_num}[0]        5184861895
     Hide Keyboard
     Handle Element Based On Locator     accessibility_id=Continue
     Wait Until Page Contains            Please verify your account      8
     @{otp_code}                         Get Webelements              xpath=//android.widget.TextView
     Log     ${otp_code}
-    Handle Element Based On Locator     ${otp_code}[3]
+    Click Element                       ${otp_code}[3]
     @{otp_num}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${otp_num}[0]        112233
-    Handle Element Based On Locator     Verify
+    Click Text                          Verify
     Wait Until Page Contains            Estimates
     Wait Until Element Is Visible       accessibility_id=Clients
 
@@ -135,7 +135,7 @@ Send a invoice to a existing client
     
     @{invoice_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${invoice_btm_sheet}[0]        Fran
-    Handle Element Based On Locator     Francisco
+    Click Text                          Francisco
     Wait Until Page Contains            Invoice    
     Handle Element Based On Locator     accessibility_id=Next
     Wait Until Page Contains            Share
@@ -158,7 +158,7 @@ And the user click on Create an AI preset
     @{ai_preset_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${ai_preset_btm_sheet}[0]        Robot Framework Test Preset
     Input Text                          ${ai_preset_btm_sheet}[1]        200.00
-    Handle Element Based On Locator     Select
+    Click Text                          Select
     Wait Until Page Contains            LBS (Pounds)
     Handle Element Based On Locator     LBS (Pounds)
     Wait Until Page Contains            Add rate
@@ -174,7 +174,7 @@ And the user click on Create an AI preset
     Wait Until Page Contains            Add instruction
     @{ai_preset_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${ai_preset_btm_sheet}[0]        Robot Framework Test Instruction
-    Handle Element Based On Locator     accessibility_id=Save
+    Click Element                       accessibility_id=Save
     Wait Until Page Contains            Add instruction
     Wait Until Page Contains            Robot Framework Test Instruction
     Handle Element Based On Locator     accessibility_id=arrow_back
@@ -193,7 +193,7 @@ And the user click on Create an estimate
     Wait Until Page Contains            Price location
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${estimate_btm_sheet}[0]        Irvine
-    Handle Element Based On Locator     Irvine, CA, USA
+    Click Text                          Irvine, CA, USA
     Wait Until Page Contains            Creating estimate...
     Wait Until Page Contains            Bathroom Remodel
     Handle Element Based On Locator     accessibility_id=Review estimate
@@ -210,7 +210,7 @@ And the user click on Create an estimate
     Wait Until Page Contains            Send
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${estimate_btm_sheet}[0]        Fran
-    Handle Element Based On Locator     Francisco
+    Click Text                          Francisco
     Wait Until Page Contains            Share
     Handle Element Based On Locator     xpath=${seek_bar}    
     Handle Element Based On Locator     accessibility_id=Send
@@ -235,7 +235,7 @@ And the user creates new estimates
     Wait Until Page Contains            Price location
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${estimate_btm_sheet}[0]        Irvine
-    Handle Element Based On Locator     Irvine, CA, USA
+    Click Text                          Irvine, CA, USA
     Wait Until Page Contains            Creating estimate...
     Wait Until Page Contains            Bathroom Remodel
     Handle Element Based On Locator     accessibility_id=Review estimate
@@ -249,7 +249,7 @@ And the user creates new estimates
     Wait Until Page Contains            Send
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${estimate_btm_sheet}[0]        Fran
-    Handle Element Based On Locator     Francisco
+    Click Text                          Francisco
     Wait Until Page Contains            Share
     Handle Element Based On Locator     xpath=${seek_bar}    
     Handle Element Based On Locator     accessibility_id=Send
