@@ -27,93 +27,93 @@ Given the user start the application
     Wait Until Page Contains            By signing up you consent to receive marketing communications such as email and SMS from Handoff as well as to its Terms of Use and Privacy Policy.
 
 And he went to the log in screen
-    Click Text                          Log in
-    Click Text                          Log in
+    Handle Element Based On Locator     Log in
+    Handle Element Based On Locator     Log in
     Wait Until Page Contains            Login methods:      8
 
 When he insert the phone number to log in
     @{phone_num}    Get Webelements                     xpath=${edit_text}
     Log     ${phone_num}
-    Click Element                       ${phone_num}[0]
+    Handle Element Based On Locator     ${phone_num}[0]
     Input Text                          ${phone_num}[0]        5184862436
     Hide Keyboard
-    Click Element                       accessibility_id=Continue
+    Handle Element Based On Locator     accessibility_id=Continue
 
 And he insert the OTP code
     Wait Until Page Contains            Please verify your account      8
     @{otp_code}                         Get Webelements              xpath=//android.widget.TextView
     Log     ${otp_code}
-    Click Element                       ${otp_code}[3]
+    Handle Element Based On Locator     ${otp_code}[3]
     @{otp_num}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${otp_num}[0]        112233
-    Click Text                          Verify
+    Handle Element Based On Locator     Verify
     Wait Until Page Contains            Estimates
     Wait Until Element Is Visible       accessibility_id=Clients
 
 When the user was logged in and do a new estimate
     Wait Until Page Contains            Estimates
-    Click Element                       accessibility_id=add, New
+    Handle Element Based On Locator     accessibility_id=add, New
     Wait Until Page Contains            Start manually        
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${estimate_btm_sheet}[0]        This kitchen remodel is 15'x10' with 9' ceilings. Scope includes: complete demo, drywall, 12x12 tile floor, base and upper cabinets, quartz countertops, 12" mosaic backsplash, new sink, outlets, recessed lights, appliances, baseboard, and painting. No layout changes. Use mid grade finishes.
-    Click Element                       accessibility_id=arrow_upward
+    Handle Element Based On Locator     accessibility_id=arrow_upward
     Wait Until Page Contains            Creating estimate...
     Wait Until Page Contains            Review estimate
     Input Text                          ${estimate_btm_sheet}[0]        Try to upgrade that with a 70's style
     Wait Until Page Contains            Updating estimate...
     Wait Until Page Contains            Kitchen Remodel
-    Click Element                       accessibility_id=Review estimate
+    Handle Element Based On Locator     accessibility_id=Review estimate
     Wait Until Page Contains            Create a proposal
-    Click Element                       accessibility_id=0, Create proposal
+    Handle Element Based On Locator     accessibility_id=0, Create proposal
     Wait Until Page Contains            Add Client
-    Click Element                       accessibility_id=Preview & Send
+    Handle Element Based On Locator     accessibility_id=Preview & Send
 
     Wait Until Page Contains            Proposal preview
-    Click Text                          Send proposal
+    Handle Element Based On Locator     Send proposal
     Wait Until Page Contains            Send
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${estimate_btm_sheet}[0]        Rod
-    Click Text                          Rodolfo
+    Handle Element Based On Locator     Rodolfo
     Wait Until Page Contains            Share
-    Click Element                       xpath=${seek_bar}    
-    Click Element                       accessibility_id=Send
+    Handle Element Based On Locator     xpath=${seek_bar}    
+    Handle Element Based On Locator     accessibility_id=Send
 
     ${avaliation}    Run Keyword And Return Status    Wait Until Page Contains    Enjoying Handoff?
-    Run Keyword If                      '${avaliation}'=='True'    Click Element    accessibility_id=close
+    Run Keyword If                      '${avaliation}'=='True'    Handle Element Based On Locator     id=close
 
     ${estimation}    Run Keyword And Return Status    Wait Until Page Contains    Estimate Unavailable
-    Run Keyword If                      '${estimation}'=='True'    Click Element    accessibility_id=close
+    Run Keyword If                      '${estimation}'=='True'    Handle Element Based On Locator     id=close
 
     Wait Until Page Contains            Kitchen Remodel
     Wait Until Page Contains            Creating estimate...
     Wait Until Page Contains            Estimates
 
 And edit this estimate using AI
-    Click Text                          Sent
+    Handle Element Based On Locator     Sent
     Wait Until Page Contains            Kitchen Remodel
     ${initial_value}    Get Text        xpath=//android.widget.TextView[@text='Kitchen Remodel']
     Set Suite Variable                  ${initial_value}
     Log                                 Initial value: ${initial_value}
-    Click Text                          Unopened
+    Handle Element Based On Locator     Unopened
     Wait Until Page Contains            Kitchen Remodel
-    Click Element                       accessibility_id=Unlock and Edit
+    Handle Element Based On Locator     accessibility_id=Unlock and Edit
     Wait Until Page Contains            Edit Estimate
-    Click Element                       accessibility_id=Continue
+    Handle Element Based On Locator     accessibility_id=Continue
     Wait Until Page Contains            Edit Estimate
-    Click Text                          Use Handoff AI
+    Handle Element Based On Locator     Use Handoff AI
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${estimate_btm_sheet}[0]        Change the estimate to a 80's style
     Wait Until Page Contains            Kitchen Remodel
-    Click Element                       accessibility_id=Review estimate
+    Handle Element Based On Locator     accessibility_id=Review estimate
     Wait Until Page Contains            Preview & Send
-    Click Element                       accessibility_id=Preview & Send
+    Handle Element Based On Locator     accessibility_id=Preview & Send
     Wait Until Page Contains            Proposal preview
-    Click Text                          Send proposal
+    Handle Element Based On Locator     Send proposal
     Wait Until Page Contains            Share
-    Click Element                       xpath=${seek_bar}    
-    Click Element                       accessibility_id=Send
+    Handle Element Based On Locator     xpath=${seek_bar}    
+    Handle Element Based On Locator     accessibility_id=Send
     Wait Until Page Contains            accessibility_id=Unlock and Edit
-    Click Element                       accessibility_id=arrow_back
+    Handle Element Based On Locator     accessibility_id=arrow_back
     Wait Until Page Contains            Estimates
 
 Then the user verifies if the proposal was edited
@@ -121,42 +121,42 @@ Then the user verifies if the proposal was edited
     Should Not Be Equal As Strings                          ${initial_value}    ${updated_value}
 
 When the user was logged in and go to create a new client and do a estimate for this client
-    Click Element                       accessibility_id=Clients
+    Handle Element Based On Locator     accessibility_id=Clients
     Wait Until Page Contains            Clients
-    Click Element                       accessibility_id=add, New    
+    Handle Element Based On Locator     accessibility_id=add, New    
     @{client_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${client_btm_sheet}[0]        Cintia
     Input Text                          ${client_btm_sheet}[1]        cinokado@gmail.com
     Input Text                          ${client_btm_sheet}[2]        5184232588
     Input Text                          ${client_btm_sheet}[3]        Irvine
-    Click Text                          Irvine, CA, USA
+    Handle Element Based On Locator     Irvine, CA, USA
     Wait Until Page Contains            Cintia
 
 Then the user creates a new client and do a estimate for this client
-    Click Element                       accessibility_id=Add Estimate
-    Click Text                          Enter a title
+    Handle Element Based On Locator     accessibility_id=Add Estimate
+    Handle Element Based On Locator     Enter a title
     @{client_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${client_btm_sheet}[0]        New Client Estimate
-    Click Text                          Use Handoff AI
+    Handle Element Based On Locator     Use Handoff AI
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${estimate_btm_sheet}[0]        This is an interior paint job. It's a 2,000 SF home with 9' ceilings. We're painting 4 bedrooms, 2 baths, great room, 2 halls, kitchen, and kitchen cabinets. Include walls, ceilings, and trim with 3 coats of mid-grade paint.
     Wait Until Page Contains            Creating estimate...
     Wait Until Page Contains            Interior Painting
-    Click Element                       accessibility_id=Review estimate
+    Handle Element Based On Locator     accessibility_id=Review estimate
     Wait Until Page Contains            Create proposal
-    Click Element                       accessibility_id=0, Create proposal
+    Handle Element Based On Locator     accessibility_id=0, Create proposal
     Wait Until Page Contains            Preview & Send
-    Click Element                       accessibility_id=Preview & Send
+    Handle Element Based On Locator     accessibility_id=Preview & Send
     Wait Until Page Contains            Proposal preview
-    Click Text                          Send proposal
+    Handle Element Based On Locator     Send proposal
     Wait Until Page Contains            Share
-    Click Element                       xpath=${seek_bar}    
-    Click Element                       accessibility_id=Send
+    Handle Element Based On Locator     xpath=${seek_bar}    
+    Handle Element Based On Locator     accessibility_id=Send
     Wait Until Page Contains            accessibility_id=Unlock and Edit
-    Click Element                       accessibility_id=arrow_back
+    Handle Element Based On Locator     accessibility_id=arrow_back
     Wait Until Page Contains            Cintia
-    Click Element                       accessibility_id=arrow_back
+    Handle Element Based On Locator     accessibility_id=arrow_back
     Wait Until Page Contains            Clients
-    Click Element                       accessibility_id=Estimates
+    Handle Element Based On Locator     accessibility_id=Estimates
     Wait Until Page Contains            Unopened
     Wait Until Page Contains            Estimates
