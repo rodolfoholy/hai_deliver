@@ -3,56 +3,52 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "ValueError: Element locator '//*[contains(@text,\"Send a proposal\")]' did not match any elements.\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Delete account' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n3) Text 'All the data associated with your account will automatically be deleted. This action cannot be undone.' did not appear in 15 seconds\n\n4) ValueError: Element locator 'xpath=//android.widget.EditText' did not match any elements.\n\n5) List '${delete_btm_sheet}' has no item in index 0.\n\n6) ValueError: Element locator 'accessibility_id=Delete' did not match any elements.\n\n7) Text 'Welcome back!' did not appear in 15 seconds\n\n8) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "name" : "Text 'Log in' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'QA' did not appear in 15 seconds\n\n5) Text 'Delete account' did not appear in 15 seconds\n\n6) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n8) Text 'All the data associated with your account will automatically be deleted. This action cannot be undone.' did not appear in 15 seconds\n\n9) ValueError: Element locator 'accessibility_id=Delete' did not match any elements.\n\n10) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "children" : [ {
         "name" : "Login with valid user and complete the onboarding",
-        "uid" : "88565a884a5eec06",
-        "parentUid" : "3352f4b565e73f129ebd43d0a30a00ca",
+        "uid" : "d64788d06e0850c3",
+        "parentUid" : "1f2001c4cd68c2dd9c4a2014f417a674",
         "status" : "failed",
         "time" : {
-          "start" : 1743137453247,
-          "stop" : 1743137570717,
-          "duration" : 117470
+          "start" : 1743193045389,
+          "stop" : 1743193186459,
+          "duration" : 141070
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3352f4b565e73f129ebd43d0a30a00ca"
+      "uid" : "1f2001c4cd68c2dd9c4a2014f417a674"
     }, {
-      "name" : "Text 'Start manually' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n2) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n3) Text 'Create your account' did not appear in 15 seconds\n\n4) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "name" : "Text 'Log in' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'Log out' did not appear in 15 seconds\n\n5) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "children" : [ {
         "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "4db94fa58c7928e7",
-        "parentUid" : "44ab068207f0550f544441994d011392",
+        "uid" : "fe5c735b525f7dce",
+        "parentUid" : "012b33104dfc2c079cb4746fb9462a19",
         "status" : "failed",
         "time" : {
-          "start" : 1743137453248,
-          "stop" : 1743137545678,
-          "duration" : 92430
+          "start" : 1743193045426,
+          "stop" : 1743193193085,
+          "duration" : 147659
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "44ab068207f0550f544441994d011392"
-    }, {
-      "name" : "ValueError: Element locator 'xpath=//android.widget.EditText' did not match any elements.\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n4) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n5) Text 'Create your account' did not appear in 15 seconds\n\n6) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
-      "children" : [ {
+      }, {
         "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "490958baacc12826",
-        "parentUid" : "9a58c415953bf329d256dceef4cb8cd8",
+        "uid" : "ae7b9094b1ab88d1",
+        "parentUid" : "012b33104dfc2c079cb4746fb9462a19",
         "status" : "failed",
         "time" : {
-          "start" : 1743137545681,
-          "stop" : 1743137643712,
-          "duration" : 98031
+          "start" : 1743193193092,
+          "stop" : 1743193335728,
+          "duration" : 142636
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "9a58c415953bf329d256dceef4cb8cd8"
+      "uid" : "012b33104dfc2c079cb4746fb9462a19"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
