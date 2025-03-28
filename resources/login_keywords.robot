@@ -45,7 +45,7 @@ And he insert the OTP code
     Click Element                       ${otp_code}[3]
     @{otp_num}    Get Webelements       xpath=${edit_text}
     Input Text                          ${otp_num}[0]        112233
-    Click Element                       Verify
+    Click Text                          Verify
     Wait Until Page Contains            Estimates
     Wait Until Element Is Visible       accessibility_id=Clients
 
