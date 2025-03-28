@@ -1,0 +1,44 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Login with valid user and complete the onboarding",
+    "uid" : "c9277887f9606a7e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1743137033846,
+      "stop" : 1743137154829,
+      "duration" : 120983
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login with valid user and do a Estimate and Proposal flow",
+    "uid" : "66bda49bd972da40",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1743137033866,
+      "stop" : 1743137124669,
+      "duration" : 90803
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login with valid user and create a new client and do a estimate for this client",
+    "uid" : "43457e305ec0d3dd",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1743137124672,
+      "stop" : 1743137215283,
+      "duration" : 90611
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
+}

@@ -1,0 +1,56 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az1250-60",
+    "children" : [ {
+      "name" : "0-9cd9f43f96f64864ad1c3457a4bcad8d",
+      "children" : [ {
+        "name" : "Login with valid user and complete the onboarding",
+        "uid" : "c9277887f9606a7e",
+        "parentUid" : "465e82c0aff340c044adadde96c55cc4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1743137033846,
+          "stop" : 1743137154829,
+          "duration" : 120983
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "465e82c0aff340c044adadde96c55cc4"
+    }, {
+      "name" : "1-112946ab5f5d463f9fb35c6c3a022038",
+      "children" : [ {
+        "name" : "Login with valid user and create a new client and do a estimate for this client",
+        "uid" : "43457e305ec0d3dd",
+        "parentUid" : "56b4a3732e32539d90eaff73ad03df86",
+        "status" : "failed",
+        "time" : {
+          "start" : 1743137124672,
+          "stop" : 1743137215283,
+          "duration" : 90611
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login with valid user and do a Estimate and Proposal flow",
+        "uid" : "66bda49bd972da40",
+        "parentUid" : "56b4a3732e32539d90eaff73ad03df86",
+        "status" : "failed",
+        "time" : {
+          "start" : 1743137033866,
+          "stop" : 1743137124669,
+          "duration" : 90803
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "56b4a3732e32539d90eaff73ad03df86"
+    } ],
+    "uid" : "ed6ba804db90a8bdbf41d90bffd3ebb7"
+  } ],
+  "name" : "timeline"
+}

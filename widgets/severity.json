@@ -1,0 +1,31 @@
+[ {
+  "uid" : "43457e305ec0d3dd",
+  "name" : "Login with valid user and create a new client and do a estimate for this client",
+  "time" : {
+    "start" : 1743137124672,
+    "stop" : 1743137215283,
+    "duration" : 90611
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "66bda49bd972da40",
+  "name" : "Login with valid user and do a Estimate and Proposal flow",
+  "time" : {
+    "start" : 1743137033866,
+    "stop" : 1743137124669,
+    "duration" : 90803
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9277887f9606a7e",
+  "name" : "Login with valid user and complete the onboarding",
+  "time" : {
+    "start" : 1743137033846,
+    "stop" : 1743137154829,
+    "duration" : 120983
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

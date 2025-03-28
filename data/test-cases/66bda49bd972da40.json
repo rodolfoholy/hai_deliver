@@ -1,0 +1,2369 @@
+{
+  "uid" : "66bda49bd972da40",
+  "name" : "Login with valid user and do a Estimate and Proposal flow",
+  "fullName" : "Tests.Login.Login with valid user and do a Estimate and Proposal flow",
+  "historyId" : "7dfd68c5c2a20bc11abc3f978bea0e84",
+  "time" : {
+    "start" : 1743137033866,
+    "stop" : 1743137124669,
+    "duration" : 90803
+  },
+  "status" : "failed",
+  "statusMessage" : "Text 'Start manually' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n2) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n3) Text 'Create your account' did not appear in 15 seconds\n\n4) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base.Start Session",
+    "time" : {
+      "stop" : 1743137065231
+    },
+    "status" : "passed",
+    "statusMessage" : "Variable '${run_number}' exists.",
+    "steps" : [ {
+      "name" : "BuiltIn.Run Keyword And Return Status",
+      "time" : {
+        "start" : 1743137033868,
+        "stop" : 1743137033870,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "BuiltIn.Variable Should Not Exist",
+        "time" : {
+          "start" : 1743137033868,
+          "stop" : 1743137033869,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "${local_machine}"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "819a41795353d9ab",
+        "name" : "Keyword Log",
+        "source" : "819a41795353d9ab.html",
+        "type" : "text/html",
+        "size" : 53
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Variable Should Not Exist"
+      }, {
+        "name" : "arg2",
+        "value" : "${local_machine}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "BuiltIn.Run Keyword If",
+      "time" : {
+        "start" : 1743137033870,
+        "stop" : 1743137065230,
+        "duration" : 31360
+      },
+      "status" : "passed",
+      "statusMessage" : "Variable '${run_number}' exists.",
+      "steps" : [ {
+        "name" : "base.Run in Browserstack",
+        "time" : {
+          "start" : 1743137033870,
+          "stop" : 1743137065230,
+          "duration" : 31360
+        },
+        "status" : "passed",
+        "statusMessage" : "Variable '${run_number}' exists.",
+        "steps" : [ {
+          "name" : "BuiltIn.Run Keyword And Return Status",
+          "time" : {
+            "start" : 1743137033871,
+            "stop" : 1743137033872,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "BuiltIn.Variable Should Not Exist",
+            "time" : {
+              "start" : 1743137033871,
+              "stop" : 1743137033872,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${loop_config_variable}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ {
+            "uid" : "67b6a7a3943a347",
+            "name" : "Keyword Log",
+            "source" : "67b6a7a3943a347.html",
+            "type" : "text/html",
+            "size" : 43
+          } ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "Variable Should Not Exist"
+          }, {
+            "name" : "arg2",
+            "value" : "${loop_config_variable}"
+          } ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "BuiltIn.Run Keyword If",
+          "time" : {
+            "start" : 1743137033872,
+            "stop" : 1743137033880,
+            "duration" : 8
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ {
+            "name" : "base.Set Build Name",
+            "time" : {
+              "start" : 1743137033873,
+              "stop" : 1743137033880,
+              "duration" : 7
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ {
+              "name" : "BuiltIn.Run Keyword And Return Status",
+              "time" : {
+                "start" : 1743137033873,
+                "stop" : 1743137033874,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ {
+                "name" : "BuiltIn.Variable Should Not Exist",
+                "time" : {
+                  "start" : 1743137033873,
+                  "stop" : 1743137033874,
+                  "duration" : 1
+                },
+                "status" : "failed",
+                "statusMessage" : "Variable '${run_number}' exists.",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "95d77e7b72b9bcfd",
+                  "name" : "Keyword Log",
+                  "source" : "95d77e7b72b9bcfd.html",
+                  "type" : "text/html",
+                  "size" : 77
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${run_number}"
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              } ],
+              "attachments" : [ {
+                "uid" : "ed40033c11c4c62e",
+                "name" : "Keyword Log",
+                "source" : "ed40033c11c4c62e.html",
+                "type" : "text/html",
+                "size" : 44
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "Variable Should Not Exist"
+              }, {
+                "name" : "arg2",
+                "value" : "${run_number}"
+              } ],
+              "stepsCount" : 1,
+              "attachmentsCount" : 2,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Run Keyword If",
+              "time" : {
+                "start" : 1743137033874,
+                "stop" : 1743137033874,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "'${isEmpty}'=='True'"
+              }, {
+                "name" : "arg2",
+                "value" : "Set Suite Variable"
+              }, {
+                "name" : "arg3",
+                "value" : "${build_machine}"
+              }, {
+                "name" : "arg4",
+                "value" : "Local Machine"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Run Keyword If",
+              "time" : {
+                "start" : 1743137033875,
+                "stop" : 1743137033876,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ {
+                "name" : "BuiltIn.Set Suite Variable",
+                "time" : {
+                  "start" : 1743137033875,
+                  "stop" : 1743137033876,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "statusMessage" : "Variable '${run_number}' exists.",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "ed182dfd1319c3d0",
+                  "name" : "Keyword Log",
+                  "source" : "ed182dfd1319c3d0.html",
+                  "type" : "text/html",
+                  "size" : 56
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${build_machine}"
+                }, {
+                  "name" : "arg2",
+                  "value" : "Device Farm"
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "'${isEmpty}'=='False'"
+              }, {
+                "name" : "arg2",
+                "value" : "Set Suite Variable"
+              }, {
+                "name" : "arg3",
+                "value" : "${build_machine}"
+              }, {
+                "name" : "arg4",
+                "value" : "Device Farm"
+              } ],
+              "stepsCount" : 1,
+              "attachmentsCount" : 1,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Run Keyword If",
+              "time" : {
+                "start" : 1743137033876,
+                "stop" : 1743137033876,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "'${isEmpty}'=='True'"
+              }, {
+                "name" : "arg2",
+                "value" : "Set run number"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            }, {
+              "name" : "DateTime.Get Current Date",
+              "time" : {
+                "start" : 1743137033877,
+                "stop" : 1743137033877,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ {
+                "uid" : "d2adde977c359d1b",
+                "name" : "Keyword Log",
+                "source" : "d2adde977c359d1b.html",
+                "type" : "text/html",
+                "size" : 52
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "result_format=%d.%m.%Y %H:%M"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 1,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Set Variable",
+              "time" : {
+                "start" : 1743137033877,
+                "stop" : 1743137033878,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ {
+                "uid" : "cfd5bbf8212624fa",
+                "name" : "Keyword Log",
+                "source" : "cfd5bbf8212624fa.html",
+                "type" : "text/html",
+                "size" : 73
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "${build_machine} Android ${date}"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 1,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Set Variable",
+              "time" : {
+                "start" : 1743137033878,
+                "stop" : 1743137033878,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "${TEST NAME}"
+              }, {
+                "name" : "arg2",
+                "value" : "Start"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 0,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Set Global Variable",
+              "time" : {
+                "start" : 1743137033878,
+                "stop" : 1743137033879,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ {
+                "uid" : "e44e82f17aa8ce03",
+                "name" : "Keyword Log",
+                "source" : "e44e82f17aa8ce03.html",
+                "type" : "text/html",
+                "size" : 73
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "${build}"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 1,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Set Variable",
+              "time" : {
+                "start" : 1743137033879,
+                "stop" : 1743137033879,
+                "duration" : 0
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ {
+                "uid" : "98afab0b62a3178",
+                "name" : "Keyword Log",
+                "source" : "98afab0b62a3178.html",
+                "type" : "text/html",
+                "size" : 54
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "ok"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 1,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Set Global Variable",
+              "time" : {
+                "start" : 1743137033879,
+                "stop" : 1743137033880,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ {
+                "uid" : "6995a99a71821861",
+                "name" : "Keyword Log",
+                "source" : "6995a99a71821861.html",
+                "type" : "text/html",
+                "size" : 54
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "${loop_config_variable}"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 1,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 12,
+            "attachmentsCount" : 8,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${isEmpty}"
+          }, {
+            "name" : "arg2",
+            "value" : "Set Build Name"
+          } ],
+          "stepsCount" : 13,
+          "attachmentsCount" : 8,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "BuiltIn.Run Keyword And Return Status",
+          "time" : {
+            "start" : 1743137033880,
+            "stop" : 1743137033882,
+            "duration" : 2
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ {
+            "name" : "BuiltIn.Variable Should Not Exist",
+            "time" : {
+              "start" : 1743137033880,
+              "stop" : 1743137033882,
+              "duration" : 2
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${APP_URL}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ {
+            "uid" : "b5203c321d1fb076",
+            "name" : "Keyword Log",
+            "source" : "b5203c321d1fb076.html",
+            "type" : "text/html",
+            "size" : 43
+          } ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "Variable Should Not Exist"
+          }, {
+            "name" : "arg2",
+            "value" : "${APP_URL}"
+          } ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "BuiltIn.Run Keyword If",
+          "time" : {
+            "start" : 1743137033882,
+            "stop" : 1743137033884,
+            "duration" : 2
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ {
+            "name" : "base.Set Browserstack App",
+            "time" : {
+              "start" : 1743137033882,
+              "stop" : 1743137033884,
+              "duration" : 2
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ {
+              "name" : "BuiltIn.Set Suite Variable",
+              "time" : {
+                "start" : 1743137033883,
+                "stop" : 1743137033884,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "Variable '${run_number}' exists.",
+              "steps" : [ ],
+              "attachments" : [ {
+                "uid" : "8ebd3a30d560e1a9",
+                "name" : "Keyword Log",
+                "source" : "8ebd3a30d560e1a9.html",
+                "type" : "text/html",
+                "size" : 84
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "${APP_URL}"
+              }, {
+                "name" : "arg2",
+                "value" : "bs://0b6229b498487a2b75a0441518945f287091287e"
+              } ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 1,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${isEmpty}"
+          }, {
+            "name" : "arg2",
+            "value" : "Set Browserstack App"
+          } ],
+          "stepsCount" : 2,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "AppiumLibrary.Set Appium Timeout",
+          "time" : {
+            "start" : 1743137033884,
+            "stop" : 1743137033885,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "15"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "AppiumLibrary.Open Application",
+          "time" : {
+            "start" : 1743137033885,
+            "stop" : 1743137062770,
+            "duration" : 28885
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${BROWSER_STACK_URL}"
+          }, {
+            "name" : "arg2",
+            "value" : "platformName=Android"
+          }, {
+            "name" : "arg3",
+            "value" : "build=${build}"
+          }, {
+            "name" : "arg4",
+            "value" : "name=${TEST NAME}"
+          }, {
+            "name" : "arg5",
+            "value" : "automationName=UiAutomator2"
+          }, {
+            "name" : "arg6",
+            "value" : "platformVersion=12.0"
+          }, {
+            "name" : "arg7",
+            "value" : "deviceName=Google Pixel 5"
+          }, {
+            "name" : "arg8",
+            "value" : "app=${APP_URL}"
+          }, {
+            "name" : "arg9",
+            "value" : "browserstack.networkLogs=true"
+          }, {
+            "name" : "arg10",
+            "value" : "autoGrantPermissions=true"
+          }, {
+            "name" : "arg11",
+            "value" : "browserstack.maskCommands=setValues"
+          }, {
+            "name" : "arg12",
+            "value" : "browserstack.idleTimeout=10"
+          }, {
+            "name" : "arg13",
+            "value" : "fullReset=false"
+          }, {
+            "name" : "arg14",
+            "value" : "noReset=true"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "BuiltIn.Sleep",
+          "time" : {
+            "start" : 1743137062770,
+            "stop" : 1743137063771,
+            "duration" : 1001
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "297cb7fe36acc573",
+            "name" : "Keyword Log",
+            "source" : "297cb7fe36acc573.html",
+            "type" : "text/html",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "1"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "AppiumLibrary.Wait Until Page Contains",
+          "time" : {
+            "start" : 1743137063771,
+            "stop" : 1743137065230,
+            "duration" : 1459
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "Create your account"
+          }, {
+            "name" : "arg2",
+            "value" : "20"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 25,
+        "attachmentsCount" : 12,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "'${run_local_machine}'=='True'"
+      }, {
+        "name" : "arg2",
+        "value" : "Run in Browserstack"
+      } ],
+      "stepsCount" : 26,
+      "attachmentsCount" : 12,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "BuiltIn.Run Keyword If",
+      "time" : {
+        "start" : 1743137065231,
+        "stop" : 1743137065231,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "statusMessage" : "Variable '${run_number}' exists.",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "'${run_local_machine}'=='False'"
+      }, {
+        "name" : "arg2",
+        "value" : "Run in local machine"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 30,
+    "attachmentsCount" : 13,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Text 'Start manually' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n2) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n3) Text 'Create your account' did not appear in 15 seconds\n\n4) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+    "steps" : [ {
+      "name" : "login_keywords.Given the user start the application and attempt to log in with a user who already did the onboarding",
+      "time" : {
+        "start" : 1743137065232,
+        "stop" : 1743137084834,
+        "duration" : 19602
+      },
+      "status" : "passed",
+      "statusMessage" : "Variable '${run_number}' exists.",
+      "steps" : [ {
+        "name" : "login_keywords.Given the user start the application",
+        "time" : {
+          "start" : 1743137065232,
+          "stop" : 1743137065687,
+          "duration" : 455
+        },
+        "status" : "passed",
+        "statusMessage" : "Variable '${run_number}' exists.",
+        "steps" : [ {
+          "name" : "AppiumLibrary.Wait Until Page Contains",
+          "time" : {
+            "start" : 1743137065232,
+            "stop" : 1743137065492,
+            "duration" : 260
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "Create your account"
+          }, {
+            "name" : "arg2",
+            "value" : "8"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "AppiumLibrary.Wait Until Page Contains",
+          "time" : {
+            "start" : 1743137065492,
+            "stop" : 1743137065687,
+            "duration" : 195
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "By signing up you consent to receive marketing communications such as email and SMS from Handoff as well as to its Terms of Use and Privacy Policy."
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "login_keywords.And executes the login",
+        "time" : {
+          "start" : 1743137065687,
+          "stop" : 1743137084834,
+          "duration" : 19147
+        },
+        "status" : "passed",
+        "statusMessage" : "Variable '${run_number}' exists.",
+        "steps" : [ {
+          "name" : "login_keywords.And he went to the log in screen",
+          "time" : {
+            "start" : 1743137065688,
+            "stop" : 1743137067593,
+            "duration" : 1905
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ {
+            "name" : "AppiumLibrary.Click Text",
+            "time" : {
+              "start" : 1743137065688,
+              "stop" : 1743137066287,
+              "duration" : 599
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "e7af9041dc42118d",
+              "name" : "Keyword Log",
+              "source" : "e7af9041dc42118d.html",
+              "type" : "text/html",
+              "size" : 71
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Log in"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Click Text",
+            "time" : {
+              "start" : 1743137066287,
+              "stop" : 1743137067168,
+              "duration" : 881
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "4216590f18794a48",
+              "name" : "Keyword Log",
+              "source" : "4216590f18794a48.html",
+              "type" : "text/html",
+              "size" : 71
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Log in"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Wait Until Page Contains",
+            "time" : {
+              "start" : 1743137067169,
+              "stop" : 1743137067593,
+              "duration" : 424
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Login methods:"
+            }, {
+              "name" : "arg2",
+              "value" : "8"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 3,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "login_keywords.When he insert the phone number to log in",
+          "time" : {
+            "start" : 1743137067593,
+            "stop" : 1743137072795,
+            "duration" : 5202
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ {
+            "name" : "AppiumLibrary.Get Webelements",
+            "time" : {
+              "start" : 1743137067594,
+              "stop" : 1743137068034,
+              "duration" : 440
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "2d70b613ae7dc259",
+              "name" : "Keyword Log",
+              "source" : "2d70b613ae7dc259.html",
+              "type" : "text/html",
+              "size" : 253
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "xpath=${edit_text}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Log",
+            "time" : {
+              "start" : 1743137068034,
+              "stop" : 1743137068035,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "ee410cdcf0873dba",
+              "name" : "Keyword Log",
+              "source" : "ee410cdcf0873dba.html",
+              "type" : "text/html",
+              "size" : 169
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${phone_num}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Click Element",
+            "time" : {
+              "start" : 1743137068035,
+              "stop" : 1743137068963,
+              "duration" : 928
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "ba2148e2182efc9c",
+              "name" : "Keyword Log",
+              "source" : "ba2148e2182efc9c.html",
+              "type" : "text/html",
+              "size" : 187
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${phone_num}[0]"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Input Text",
+            "time" : {
+              "start" : 1743137068963,
+              "stop" : 1743137069796,
+              "duration" : 833
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "bbc810b5b15f2608",
+              "name" : "Keyword Log",
+              "source" : "bbc810b5b15f2608.html",
+              "type" : "text/html",
+              "size" : 210
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${phone_num}[0]"
+            }, {
+              "name" : "arg2",
+              "value" : "5184862436"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Hide Keyboard",
+            "time" : {
+              "start" : 1743137069796,
+              "stop" : 1743137072247,
+              "duration" : 2451
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Click Element",
+            "time" : {
+              "start" : 1743137072247,
+              "stop" : 1743137072795,
+              "duration" : 548
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "3e6184bb56bf2420",
+              "name" : "Keyword Log",
+              "source" : "3e6184bb56bf2420.html",
+              "type" : "text/html",
+              "size" : 71
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "accessibility_id=Continue"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 6,
+          "attachmentsCount" : 5,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "login_keywords.And he insert the OTP code",
+          "time" : {
+            "start" : 1743137072796,
+            "stop" : 1743137084834,
+            "duration" : 12038
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${run_number}' exists.",
+          "steps" : [ {
+            "name" : "AppiumLibrary.Wait Until Page Contains",
+            "time" : {
+              "start" : 1743137072796,
+              "stop" : 1743137075640,
+              "duration" : 2844
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Please verify your account"
+            }, {
+              "name" : "arg2",
+              "value" : "8"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Get Webelements",
+            "time" : {
+              "start" : 1743137075640,
+              "stop" : 1743137075885,
+              "duration" : 245
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "15d87880ae0f2179",
+              "name" : "Keyword Log",
+              "source" : "15d87880ae0f2179.html",
+              "type" : "text/html",
+              "size" : 310
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "xpath=//android.widget.TextView"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Log",
+            "time" : {
+              "start" : 1743137075885,
+              "stop" : 1743137075885,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "523c9457ecd0d38e",
+              "name" : "Keyword Log",
+              "source" : "523c9457ecd0d38e.html",
+              "type" : "text/html",
+              "size" : 1885
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${otp_code}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Click Element",
+            "time" : {
+              "start" : 1743137075886,
+              "stop" : 1743137076018,
+              "duration" : 132
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "baf78e0f9aea5500",
+              "name" : "Keyword Log",
+              "source" : "baf78e0f9aea5500.html",
+              "type" : "text/html",
+              "size" : 187
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${otp_code}[3]"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Get Webelements",
+            "time" : {
+              "start" : 1743137076019,
+              "stop" : 1743137076502,
+              "duration" : 483
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "144beb996d587427",
+              "name" : "Keyword Log",
+              "source" : "144beb996d587427.html",
+              "type" : "text/html",
+              "size" : 251
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "xpath=${edit_text}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Input Text",
+            "time" : {
+              "start" : 1743137076502,
+              "stop" : 1743137076642,
+              "duration" : 140
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "79b8059535c2e37f",
+              "name" : "Keyword Log",
+              "source" : "79b8059535c2e37f.html",
+              "type" : "text/html",
+              "size" : 206
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${otp_num}[0]"
+            }, {
+              "name" : "arg2",
+              "value" : "112233"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Click Text",
+            "time" : {
+              "start" : 1743137076642,
+              "stop" : 1743137077506,
+              "duration" : 864
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "49c2bf321c70e093",
+              "name" : "Keyword Log",
+              "source" : "49c2bf321c70e093.html",
+              "type" : "text/html",
+              "size" : 71
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Verify"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Wait Until Page Contains",
+            "time" : {
+              "start" : 1743137077506,
+              "stop" : 1743137084536,
+              "duration" : 7030
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Estimates"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Wait Until Element Is Visible",
+            "time" : {
+              "start" : 1743137084536,
+              "stop" : 1743137084833,
+              "duration" : 297
+            },
+            "status" : "passed",
+            "statusMessage" : "Variable '${run_number}' exists.",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "accessibility_id=Clients"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 9,
+          "attachmentsCount" : 6,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 21,
+        "attachmentsCount" : 13,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 25,
+      "attachmentsCount" : 13,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "login_keywords.When the user was logged in and do a new estimate",
+      "time" : {
+        "start" : 1743137084834,
+        "stop" : 1743137102004,
+        "duration" : 17170
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+      "steps" : [ {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137084835,
+          "stop" : 1743137085401,
+          "duration" : 566
+        },
+        "status" : "passed",
+        "statusMessage" : "Variable '${run_number}' exists.",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Estimates"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Element",
+        "time" : {
+          "start" : 1743137085401,
+          "stop" : 1743137085732,
+          "duration" : 331
+        },
+        "status" : "passed",
+        "statusMessage" : "Variable '${run_number}' exists.",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "6413d4ceecb97529",
+          "name" : "Keyword Log",
+          "source" : "6413d4ceecb97529.html",
+          "type" : "text/html",
+          "size" : 71
+        } ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "accessibility_id=add, New"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137085732,
+          "stop" : 1743137101995,
+          "duration" : 16263
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ {
+          "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+          "time" : {
+            "start" : 1743137101389,
+            "stop" : 1743137101994,
+            "duration" : 605
+          },
+          "status" : "failed",
+          "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+          "steps" : [ ],
+          "attachments" : [ {
+            "name" : "screenshot",
+            "type" : "image/jpg",
+            "size" : 0
+          }, {
+            "uid" : "dbd70c0b2fa3a4b3",
+            "name" : "Keyword Log",
+            "source" : "dbd70c0b2fa3a4b3.html",
+            "type" : "text/html",
+            "size" : 266765
+          } ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "5ca41d304ea79801",
+          "name" : "Keyword Log",
+          "source" : "5ca41d304ea79801.html",
+          "type" : "text/html",
+          "size" : 59215
+        } ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Start manually"
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 3,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Get Webelements",
+        "time" : {
+          "start" : 1743137101996,
+          "stop" : 1743137101996,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "xpath=${edit_text}"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Input Text",
+        "time" : {
+          "start" : 1743137101996,
+          "stop" : 1743137101996,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "${estimate_btm_sheet}[0]"
+        }, {
+          "name" : "arg2",
+          "value" : "This kitchen remodel is 15'x10' with 9' ceilings. Scope includes: complete demo, drywall, 12x12 tile floor, base and upper cabinets, quartz countertops, 12\" mosaic backsplash, new sink, outlets, recessed lights, appliances, baseboard, and painting. No layout changes. Use mid grade finishes."
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Element",
+        "time" : {
+          "start" : 1743137101996,
+          "stop" : 1743137101996,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "accessibility_id=arrow_upward"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137101997,
+          "stop" : 1743137101997,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Creating estimate..."
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137101997,
+          "stop" : 1743137101997,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Review estimate"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Input Text",
+        "time" : {
+          "start" : 1743137101997,
+          "stop" : 1743137101997,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "${estimate_btm_sheet}[0]"
+        }, {
+          "name" : "arg2",
+          "value" : "Try to upgrade that with a 70's style"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137101997,
+          "stop" : 1743137101997,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Updating estimate..."
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137101998,
+          "stop" : 1743137101998,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Kitchen Remodel"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Element",
+        "time" : {
+          "start" : 1743137101998,
+          "stop" : 1743137101998,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "accessibility_id=Review estimate"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137101998,
+          "stop" : 1743137101998,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Create a proposal"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Element",
+        "time" : {
+          "start" : 1743137101998,
+          "stop" : 1743137101998,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "accessibility_id=0, Create proposal"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137101999,
+          "stop" : 1743137101999,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Add Client"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Element",
+        "time" : {
+          "start" : 1743137102000,
+          "stop" : 1743137102000,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "accessibility_id=Preview & Send"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137102000,
+          "stop" : 1743137102000,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Proposal preview"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Text",
+        "time" : {
+          "start" : 1743137102000,
+          "stop" : 1743137102000,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Send proposal"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137102000,
+          "stop" : 1743137102000,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Send"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Get Webelements",
+        "time" : {
+          "start" : 1743137102001,
+          "stop" : 1743137102001,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "xpath=${edit_text}"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Input Text",
+        "time" : {
+          "start" : 1743137102001,
+          "stop" : 1743137102001,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "${estimate_btm_sheet}[0]"
+        }, {
+          "name" : "arg2",
+          "value" : "Rod"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Text",
+        "time" : {
+          "start" : 1743137102001,
+          "stop" : 1743137102001,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Rodolfo"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137102001,
+          "stop" : 1743137102001,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Share"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Element",
+        "time" : {
+          "start" : 1743137102002,
+          "stop" : 1743137102002,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "xpath=${seek_bar}"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Click Element",
+        "time" : {
+          "start" : 1743137102002,
+          "stop" : 1743137102002,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "accessibility_id=Send"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword And Return Status",
+        "time" : {
+          "start" : 1743137102002,
+          "stop" : 1743137102002,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Wait Until Page Contains"
+        }, {
+          "name" : "arg2",
+          "value" : "Enjoying Handoff?"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword If",
+        "time" : {
+          "start" : 1743137102002,
+          "stop" : 1743137102002,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "'${avaliation}'=='True'"
+        }, {
+          "name" : "arg2",
+          "value" : "Click Element"
+        }, {
+          "name" : "arg3",
+          "value" : "accessibility_id=close"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword And Return Status",
+        "time" : {
+          "start" : 1743137102003,
+          "stop" : 1743137102003,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Wait Until Page Contains"
+        }, {
+          "name" : "arg2",
+          "value" : "Estimate Unavailable"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword If",
+        "time" : {
+          "start" : 1743137102003,
+          "stop" : 1743137102003,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "'${estimation}'=='True'"
+        }, {
+          "name" : "arg2",
+          "value" : "Click Element"
+        }, {
+          "name" : "arg3",
+          "value" : "accessibility_id=close"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137102003,
+          "stop" : 1743137102003,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Kitchen Remodel"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137102003,
+          "stop" : 1743137102004,
+          "duration" : 1
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Creating estimate..."
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      }, {
+        "name" : "AppiumLibrary.Wait Until Page Contains",
+        "time" : {
+          "start" : 1743137102004,
+          "stop" : 1743137102004,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Estimates"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 33,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "login_keywords.And edit this estimate using AI",
+      "time" : {
+        "start" : 1743137102004,
+        "stop" : 1743137102004,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "login_keywords.Then the user verifies if the proposal was edited",
+      "time" : {
+        "start" : 1743137102005,
+        "stop" : 1743137102005,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 62,
+    "attachmentsCount" : 17,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "logged_out_keywords.Logout and validate session termination",
+    "time" : {
+      "stop" : 1743137124669
+    },
+    "status" : "failed",
+    "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+    "steps" : [ {
+      "name" : "AppiumLibrary.Wait Until Page Contains",
+      "time" : {
+        "start" : 1743137102005,
+        "stop" : 1743137103128,
+        "duration" : 1123
+      },
+      "status" : "passed",
+      "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Estimates"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibrary.Click Element",
+      "time" : {
+        "start" : 1743137103128,
+        "stop" : 1743137103505,
+        "duration" : 377
+      },
+      "status" : "passed",
+      "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "461c341c3cf9b690",
+        "name" : "Keyword Log",
+        "source" : "461c341c3cf9b690.html",
+        "type" : "text/html",
+        "size" : 71
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "accessibility_id=settings"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibrary.Swipe By Percent",
+      "time" : {
+        "start" : 1743137103505,
+        "stop" : 1743137106618,
+        "duration" : 3113
+      },
+      "status" : "passed",
+      "statusMessage" : "Text 'Start manually' did not appear in 15 seconds",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "50"
+      }, {
+        "name" : "arg2",
+        "value" : "57"
+      }, {
+        "name" : "arg3",
+        "value" : "50"
+      }, {
+        "name" : "arg4",
+        "value" : "90"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibrary.Click Text",
+      "time" : {
+        "start" : 1743137106618,
+        "stop" : 1743137107377,
+        "duration" : 759
+      },
+      "status" : "failed",
+      "statusMessage" : "ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.",
+      "steps" : [ {
+        "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+        "time" : {
+          "start" : 1743137106836,
+          "stop" : 1743137107375,
+          "duration" : 539
+        },
+        "status" : "failed",
+        "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+        "steps" : [ ],
+        "attachments" : [ {
+          "name" : "screenshot",
+          "type" : "image/jpg",
+          "size" : 0
+        }, {
+          "uid" : "ede31b6fd6ffbb83",
+          "name" : "Keyword Log",
+          "source" : "ede31b6fd6ffbb83.html",
+          "type" : "text/html",
+          "size" : 166169
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "1910047be69e0000",
+        "name" : "Keyword Log",
+        "source" : "1910047be69e0000.html",
+        "type" : "text/html",
+        "size" : 377
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Log out"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibrary.Click Element",
+      "time" : {
+        "start" : 1743137107377,
+        "stop" : 1743137108034,
+        "duration" : 657
+      },
+      "status" : "failed",
+      "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+      "steps" : [ {
+        "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+        "time" : {
+          "start" : 1743137107526,
+          "stop" : 1743137108032,
+          "duration" : 506
+        },
+        "status" : "failed",
+        "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+        "steps" : [ ],
+        "attachments" : [ {
+          "name" : "screenshot",
+          "type" : "image/jpg",
+          "size" : 0
+        }, {
+          "uid" : "8caeabc3997cbc63",
+          "name" : "Keyword Log",
+          "source" : "8caeabc3997cbc63.html",
+          "type" : "text/html",
+          "size" : 166169
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "4f76687c888bf1cf",
+        "name" : "Keyword Log",
+        "source" : "4f76687c888bf1cf.html",
+        "type" : "text/html",
+        "size" : 387
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "accessibility_id=logout, Sign out"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibrary.Wait Until Page Contains",
+      "time" : {
+        "start" : 1743137108034,
+        "stop" : 1743137124169,
+        "duration" : 16135
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Create your account' did not appear in 15 seconds",
+      "steps" : [ {
+        "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+        "time" : {
+          "start" : 1743137123660,
+          "stop" : 1743137124167,
+          "duration" : 507
+        },
+        "status" : "failed",
+        "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+        "steps" : [ ],
+        "attachments" : [ {
+          "name" : "screenshot",
+          "type" : "image/jpg",
+          "size" : 0
+        }, {
+          "uid" : "b7cfd1566cd73de7",
+          "name" : "Keyword Log",
+          "source" : "b7cfd1566cd73de7.html",
+          "type" : "text/html",
+          "size" : 166169
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "6ef8f6a4dac2206d",
+        "name" : "Keyword Log",
+        "source" : "6ef8f6a4dac2206d.html",
+        "type" : "text/html",
+        "size" : 35465
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Create your account"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+      "time" : {
+        "start" : 1743137124169,
+        "stop" : 1743137124668,
+        "duration" : 499
+      },
+      "status" : "failed",
+      "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "steps" : [ ],
+      "attachments" : [ {
+        "name" : "screenshot",
+        "type" : "image/jpg",
+        "size" : 0
+      }, {
+        "uid" : "d3adfa32ccdf9db6",
+        "name" : "Keyword Log",
+        "source" : "d3adfa32ccdf9db6.html",
+        "type" : "text/html",
+        "size" : 166169
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 12,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "Login"
+  }, {
+    "name" : "framework",
+    "value" : "robotframework"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1250-60"
+  }, {
+    "name" : "thread",
+    "value" : "1-112946ab5f5d463f9fb35c6c3a022038"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "login" ]
+  },
+  "source" : "66bda49bd972da40.json",
+  "parameterValues" : [ ]
+}
