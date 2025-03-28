@@ -1,0 +1,3629 @@
+{
+  "uid" : "310eff77a1757707",
+  "name" : "Login with valid user and create a new client and do a estimate for this client",
+  "fullName" : "Tests.Login.Login with valid user and create a new client and do a estimate for this client",
+  "historyId" : "3b7b1901ebfa4f976ceb612e0ef33390",
+  "time" : {
+    "start" : 1743194287314,
+    "stop" : 1743194427444,
+    "duration" : 140130
+  },
+  "status" : "failed",
+  "statusMessage" : "Text 'Log in' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'Log out' did not appear in 15 seconds\n\n5) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "base.Start Session",
+    "time" : {
+      "stop" : 1743194319104
+    },
+    "status" : "passed",
+    "statusMessage" : "Variable '${APP_URL}' exists.",
+    "steps" : [ {
+      "name" : "BuiltIn.Run Keyword And Return Status",
+      "time" : {
+        "start" : 1743194287315,
+        "stop" : 1743194287317,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "BuiltIn.Variable Should Not Exist",
+        "time" : {
+          "start" : 1743194287315,
+          "stop" : 1743194287316,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "${local_machine}"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "8c48eb78cece20bb",
+        "name" : "Keyword Log",
+        "source" : "8c48eb78cece20bb.html",
+        "type" : "text/html",
+        "size" : 53
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Variable Should Not Exist"
+      }, {
+        "name" : "arg2",
+        "value" : "${local_machine}"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "BuiltIn.Run Keyword If",
+      "time" : {
+        "start" : 1743194287317,
+        "stop" : 1743194319103,
+        "duration" : 31786
+      },
+      "status" : "passed",
+      "statusMessage" : "Variable '${APP_URL}' exists.",
+      "steps" : [ {
+        "name" : "base.Run in Browserstack",
+        "time" : {
+          "start" : 1743194287317,
+          "stop" : 1743194319103,
+          "duration" : 31786
+        },
+        "status" : "passed",
+        "statusMessage" : "Variable '${APP_URL}' exists.",
+        "steps" : [ {
+          "name" : "BuiltIn.Run Keyword And Return Status",
+          "time" : {
+            "start" : 1743194287318,
+            "stop" : 1743194287319,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${loop_config_variable}' exists.",
+          "steps" : [ {
+            "name" : "BuiltIn.Variable Should Not Exist",
+            "time" : {
+              "start" : 1743194287318,
+              "stop" : 1743194287318,
+              "duration" : 0
+            },
+            "status" : "failed",
+            "statusMessage" : "Variable '${loop_config_variable}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "6a5c06aabeed2ced",
+              "name" : "Keyword Log",
+              "source" : "6a5c06aabeed2ced.html",
+              "type" : "text/html",
+              "size" : 87
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${loop_config_variable}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ {
+            "uid" : "23c88625de5dae4d",
+            "name" : "Keyword Log",
+            "source" : "23c88625de5dae4d.html",
+            "type" : "text/html",
+            "size" : 44
+          } ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "Variable Should Not Exist"
+          }, {
+            "name" : "arg2",
+            "value" : "${loop_config_variable}"
+          } ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "BuiltIn.Run Keyword If",
+          "time" : {
+            "start" : 1743194287319,
+            "stop" : 1743194287319,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${loop_config_variable}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${isEmpty}"
+          }, {
+            "name" : "arg2",
+            "value" : "Set Build Name"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "BuiltIn.Run Keyword And Return Status",
+          "time" : {
+            "start" : 1743194287319,
+            "stop" : 1743194287320,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${APP_URL}' exists.",
+          "steps" : [ {
+            "name" : "BuiltIn.Variable Should Not Exist",
+            "time" : {
+              "start" : 1743194287319,
+              "stop" : 1743194287320,
+              "duration" : 1
+            },
+            "status" : "failed",
+            "statusMessage" : "Variable '${APP_URL}' exists.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "1dddb5f9712ff237",
+              "name" : "Keyword Log",
+              "source" : "1dddb5f9712ff237.html",
+              "type" : "text/html",
+              "size" : 74
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${APP_URL}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ {
+            "uid" : "33f4e6a761235c1d",
+            "name" : "Keyword Log",
+            "source" : "33f4e6a761235c1d.html",
+            "type" : "text/html",
+            "size" : 44
+          } ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "Variable Should Not Exist"
+          }, {
+            "name" : "arg2",
+            "value" : "${APP_URL}"
+          } ],
+          "stepsCount" : 1,
+          "attachmentsCount" : 2,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "BuiltIn.Run Keyword If",
+          "time" : {
+            "start" : 1743194287320,
+            "stop" : 1743194287320,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${APP_URL}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${isEmpty}"
+          }, {
+            "name" : "arg2",
+            "value" : "Set Browserstack App"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "AppiumLibrary.Set Appium Timeout",
+          "time" : {
+            "start" : 1743194287321,
+            "stop" : 1743194287321,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${APP_URL}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "15"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "AppiumLibrary.Open Application",
+          "time" : {
+            "start" : 1743194287321,
+            "stop" : 1743194317232,
+            "duration" : 29911
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${APP_URL}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${BROWSER_STACK_URL}"
+          }, {
+            "name" : "arg2",
+            "value" : "platformName=Android"
+          }, {
+            "name" : "arg3",
+            "value" : "build=${build}"
+          }, {
+            "name" : "arg4",
+            "value" : "name=${TEST NAME}"
+          }, {
+            "name" : "arg5",
+            "value" : "automationName=UiAutomator2"
+          }, {
+            "name" : "arg6",
+            "value" : "platformVersion=12.0"
+          }, {
+            "name" : "arg7",
+            "value" : "deviceName=Google Pixel 5"
+          }, {
+            "name" : "arg8",
+            "value" : "app=${APP_URL}"
+          }, {
+            "name" : "arg9",
+            "value" : "browserstack.networkLogs=true"
+          }, {
+            "name" : "arg10",
+            "value" : "autoGrantPermissions=true"
+          }, {
+            "name" : "arg11",
+            "value" : "browserstack.maskCommands=setValues"
+          }, {
+            "name" : "arg12",
+            "value" : "browserstack.idleTimeout=10"
+          }, {
+            "name" : "arg13",
+            "value" : "fullReset=false"
+          }, {
+            "name" : "arg14",
+            "value" : "noReset=true"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "BuiltIn.Sleep",
+          "time" : {
+            "start" : 1743194317233,
+            "stop" : 1743194318233,
+            "duration" : 1000
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${APP_URL}' exists.",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "d976414fe85b4e1f",
+            "name" : "Keyword Log",
+            "source" : "d976414fe85b4e1f.html",
+            "type" : "text/html",
+            "size" : 41
+          } ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "1"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "AppiumLibrary.Wait Until Page Contains",
+          "time" : {
+            "start" : 1743194318234,
+            "stop" : 1743194319103,
+            "duration" : 869
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${APP_URL}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "Create your account"
+          }, {
+            "name" : "arg2",
+            "value" : "20"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 10,
+        "attachmentsCount" : 5,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "'${run_local_machine}'=='True'"
+      }, {
+        "name" : "arg2",
+        "value" : "Run in Browserstack"
+      } ],
+      "stepsCount" : 11,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "BuiltIn.Run Keyword If",
+      "time" : {
+        "start" : 1743194319103,
+        "stop" : 1743194319104,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "statusMessage" : "Variable '${APP_URL}' exists.",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "'${run_local_machine}'=='False'"
+      }, {
+        "name" : "arg2",
+        "value" : "Run in local machine"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 15,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Text 'Log in' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'Log out' did not appear in 15 seconds\n\n5) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+    "steps" : [ {
+      "name" : "login_keywords.Given the user start the application and attempt to log in with a user who already did the onboarding",
+      "time" : {
+        "start" : 1743194319104,
+        "stop" : 1743194354726,
+        "duration" : 35622
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+      "steps" : [ {
+        "name" : "login_keywords.Given the user start the application",
+        "time" : {
+          "start" : 1743194319104,
+          "stop" : 1743194319577,
+          "duration" : 473
+        },
+        "status" : "passed",
+        "statusMessage" : "Variable '${APP_URL}' exists.",
+        "steps" : [ {
+          "name" : "AppiumLibrary.Wait Until Page Contains",
+          "time" : {
+            "start" : 1743194319105,
+            "stop" : 1743194319276,
+            "duration" : 171
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${APP_URL}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "Create your account"
+          }, {
+            "name" : "arg2",
+            "value" : "8"
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "AppiumLibrary.Wait Until Page Contains",
+          "time" : {
+            "start" : 1743194319276,
+            "stop" : 1743194319577,
+            "duration" : 301
+          },
+          "status" : "passed",
+          "statusMessage" : "Variable '${APP_URL}' exists.",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "By signing up you consent to receive marketing communications such as email and SMS from Handoff as well as to its Terms of Use and Privacy Policy."
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "login_keywords.And executes the login",
+        "time" : {
+          "start" : 1743194319577,
+          "stop" : 1743194354726,
+          "duration" : 35149
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+        "steps" : [ {
+          "name" : "login_keywords.And he went to the log in screen",
+          "time" : {
+            "start" : 1743194319578,
+            "stop" : 1743194354724,
+            "duration" : 35146
+          },
+          "status" : "failed",
+          "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+          "steps" : [ {
+            "name" : "helpers_keywords.Handle Element Based On Locator",
+            "time" : {
+              "start" : 1743194319578,
+              "stop" : 1743194339037,
+              "duration" : 19459
+            },
+            "status" : "passed",
+            "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+            "steps" : [ {
+              "name" : "BuiltIn.Run Keyword And Return Status",
+              "time" : {
+                "start" : 1743194319578,
+                "stop" : 1743194319579,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "'Log in' does not contain 'accessibility_id='",
+              "steps" : [ {
+                "name" : "BuiltIn.Should Contain",
+                "time" : {
+                  "start" : 1743194319579,
+                  "stop" : 1743194319579,
+                  "duration" : 0
+                },
+                "status" : "failed",
+                "statusMessage" : "'Log in' does not contain 'accessibility_id='",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "829c9b7f27bdecd8",
+                  "name" : "Keyword Log",
+                  "source" : "829c9b7f27bdecd8.html",
+                  "type" : "text/html",
+                  "size" : 90
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                }, {
+                  "name" : "arg2",
+                  "value" : "accessibility_id="
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              } ],
+              "attachments" : [ {
+                "uid" : "682c8291e531a0d9",
+                "name" : "Keyword Log",
+                "source" : "682c8291e531a0d9.html",
+                "type" : "text/html",
+                "size" : 54
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "Should Contain"
+              }, {
+                "name" : "arg2",
+                "value" : "${locator}"
+              }, {
+                "name" : "arg3",
+                "value" : "accessibility_id="
+              } ],
+              "stepsCount" : 1,
+              "attachmentsCount" : 2,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Run Keyword And Return Status",
+              "time" : {
+                "start" : 1743194319580,
+                "stop" : 1743194319581,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "'Log in' does not contain 'id='",
+              "steps" : [ {
+                "name" : "BuiltIn.Should Contain",
+                "time" : {
+                  "start" : 1743194319580,
+                  "stop" : 1743194319580,
+                  "duration" : 0
+                },
+                "status" : "failed",
+                "statusMessage" : "'Log in' does not contain 'id='",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "daba135dc3faeac2",
+                  "name" : "Keyword Log",
+                  "source" : "daba135dc3faeac2.html",
+                  "type" : "text/html",
+                  "size" : 76
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                }, {
+                  "name" : "arg2",
+                  "value" : "id="
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              } ],
+              "attachments" : [ {
+                "uid" : "a8845fdf5befa4af",
+                "name" : "Keyword Log",
+                "source" : "a8845fdf5befa4af.html",
+                "type" : "text/html",
+                "size" : 43
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "Should Contain"
+              }, {
+                "name" : "arg2",
+                "value" : "${locator}"
+              }, {
+                "name" : "arg3",
+                "value" : "id="
+              } ],
+              "stepsCount" : 1,
+              "attachmentsCount" : 2,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Run Keyword If",
+              "time" : {
+                "start" : 1743194319581,
+                "stop" : 1743194339036,
+                "duration" : 19455
+              },
+              "status" : "passed",
+              "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+              "steps" : [ {
+                "name" : "helpers_keywords.Flow Without ID Or Accessibility ID",
+                "time" : {
+                  "start" : 1743194319581,
+                  "stop" : 1743194339036,
+                  "duration" : 19455
+                },
+                "status" : "passed",
+                "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                "steps" : [ {
+                  "name" : "AppiumLibrary.Wait Until Page Contains",
+                  "time" : {
+                    "start" : 1743194319581,
+                    "stop" : 1743194319775,
+                    "duration" : 194
+                  },
+                  "status" : "passed",
+                  "statusMessage" : "'Log in' does not contain 'id='",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${locator}"
+                  } ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 0,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                }, {
+                  "name" : "BuiltIn.Log",
+                  "time" : {
+                    "start" : 1743194319775,
+                    "stop" : 1743194319775,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "statusMessage" : "'Log in' does not contain 'id='",
+                  "steps" : [ ],
+                  "attachments" : [ {
+                    "uid" : "b84ef66a7129f32e",
+                    "name" : "Keyword Log",
+                    "source" : "b84ef66a7129f32e.html",
+                    "type" : "text/html",
+                    "size" : 69
+                  } ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "Starting click with retry logic for: ${locator}"
+                  } ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 1,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                }, {
+                  "name" : "BuiltIn.Set Variable",
+                  "time" : {
+                    "start" : 1743194319775,
+                    "stop" : 1743194319776,
+                    "duration" : 1
+                  },
+                  "status" : "passed",
+                  "statusMessage" : "'Log in' does not contain 'id='",
+                  "steps" : [ ],
+                  "attachments" : [ {
+                    "uid" : "dedcbe09490d3776",
+                    "name" : "Keyword Log",
+                    "source" : "dedcbe09490d3776.html",
+                    "type" : "text/html",
+                    "size" : 49
+                  } ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${True}"
+                  } ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 1,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                }, {
+                  "name" : "${index}    IN RANGE    3",
+                  "time" : {
+                    "start" : 1743194319776,
+                    "stop" : 1743194339035,
+                    "duration" : 19259
+                  },
+                  "status" : "passed",
+                  "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                  "steps" : [ {
+                    "name" : "${index} = 0",
+                    "time" : {
+                      "start" : 1743194319776,
+                      "stop" : 1743194322034,
+                      "duration" : 2258
+                    },
+                    "status" : "passed",
+                    "statusMessage" : "'Log in' does not contain 'id='",
+                    "steps" : [ {
+                      "name" : "BuiltIn.Log",
+                      "time" : {
+                        "start" : 1743194319776,
+                        "stop" : 1743194319777,
+                        "duration" : 1
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "'Log in' does not contain 'id='",
+                      "steps" : [ ],
+                      "attachments" : [ {
+                        "uid" : "ee1313ebf8ff6b1d",
+                        "name" : "Keyword Log",
+                        "source" : "ee1313ebf8ff6b1d.html",
+                        "type" : "text/html",
+                        "size" : 57
+                      } ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "Attempt ${index + 1} to click text: ${locator}"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 1,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "AppiumLibrary.Click Text",
+                      "time" : {
+                        "start" : 1743194319777,
+                        "stop" : 1743194320844,
+                        "duration" : 1067
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "'Log in' does not contain 'id='",
+                      "steps" : [ ],
+                      "attachments" : [ {
+                        "uid" : "ac438372b57e01ba",
+                        "name" : "Keyword Log",
+                        "source" : "ac438372b57e01ba.html",
+                        "type" : "text/html",
+                        "size" : 71
+                      } ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "${locator}"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 1,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Sleep",
+                      "time" : {
+                        "start" : 1743194320844,
+                        "stop" : 1743194321845,
+                        "duration" : 1001
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "'Log in' does not contain 'id='",
+                      "steps" : [ ],
+                      "attachments" : [ {
+                        "uid" : "84b16b4855334092",
+                        "name" : "Keyword Log",
+                        "source" : "84b16b4855334092.html",
+                        "type" : "text/html",
+                        "size" : 41
+                      } ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "1s"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 1,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Run Keyword And Return Status",
+                      "time" : {
+                        "start" : 1743194321845,
+                        "stop" : 1743194322034,
+                        "duration" : 189
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "'Log in' does not contain 'id='",
+                      "steps" : [ {
+                        "name" : "AppiumLibrary.Wait Until Page Contains",
+                        "time" : {
+                          "start" : 1743194321845,
+                          "stop" : 1743194322033,
+                          "duration" : 188
+                        },
+                        "status" : "passed",
+                        "statusMessage" : "'Log in' does not contain 'id='",
+                        "steps" : [ ],
+                        "attachments" : [ ],
+                        "parameters" : [ {
+                          "name" : "arg1",
+                          "value" : "${locator}"
+                        } ],
+                        "stepsCount" : 0,
+                        "attachmentsCount" : 0,
+                        "shouldDisplayMessage" : true,
+                        "hasContent" : true
+                      } ],
+                      "attachments" : [ {
+                        "uid" : "de28cf636fcc47ac",
+                        "name" : "Keyword Log",
+                        "source" : "de28cf636fcc47ac.html",
+                        "type" : "text/html",
+                        "size" : 49
+                      } ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "Wait Until Page Contains"
+                      }, {
+                        "name" : "arg2",
+                        "value" : "${locator}"
+                      } ],
+                      "stepsCount" : 1,
+                      "attachmentsCount" : 1,
+                      "shouldDisplayMessage" : false,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Run Keyword If",
+                      "time" : {
+                        "start" : 1743194322034,
+                        "stop" : 1743194322034,
+                        "duration" : 0
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "'Log in' does not contain 'id='",
+                      "steps" : [ ],
+                      "attachments" : [ ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "not ${still_visible}"
+                      }, {
+                        "name" : "arg2",
+                        "value" : "Exit For Loop"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 0,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    } ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "stepsCount" : 6,
+                    "attachmentsCount" : 4,
+                    "shouldDisplayMessage" : false,
+                    "hasContent" : true
+                  }, {
+                    "name" : "${index} = 1",
+                    "time" : {
+                      "start" : 1743194322035,
+                      "stop" : 1743194339035,
+                      "duration" : 17000
+                    },
+                    "status" : "passed",
+                    "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                    "steps" : [ {
+                      "name" : "BuiltIn.Log",
+                      "time" : {
+                        "start" : 1743194322035,
+                        "stop" : 1743194322035,
+                        "duration" : 0
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "'Log in' does not contain 'id='",
+                      "steps" : [ ],
+                      "attachments" : [ {
+                        "uid" : "336624ab015b7d5a",
+                        "name" : "Keyword Log",
+                        "source" : "336624ab015b7d5a.html",
+                        "type" : "text/html",
+                        "size" : 57
+                      } ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "Attempt ${index + 1} to click text: ${locator}"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 1,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "AppiumLibrary.Click Text",
+                      "time" : {
+                        "start" : 1743194322036,
+                        "stop" : 1743194322296,
+                        "duration" : 260
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "'Log in' does not contain 'id='",
+                      "steps" : [ ],
+                      "attachments" : [ {
+                        "uid" : "4325bc6cb19cb0eb",
+                        "name" : "Keyword Log",
+                        "source" : "4325bc6cb19cb0eb.html",
+                        "type" : "text/html",
+                        "size" : 71
+                      } ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "${locator}"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 1,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Sleep",
+                      "time" : {
+                        "start" : 1743194322296,
+                        "stop" : 1743194323297,
+                        "duration" : 1001
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "'Log in' does not contain 'id='",
+                      "steps" : [ ],
+                      "attachments" : [ {
+                        "uid" : "9e4f099374b95851",
+                        "name" : "Keyword Log",
+                        "source" : "9e4f099374b95851.html",
+                        "type" : "text/html",
+                        "size" : 41
+                      } ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "1s"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 1,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Run Keyword And Return Status",
+                      "time" : {
+                        "start" : 1743194323297,
+                        "stop" : 1743194339034,
+                        "duration" : 15737
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                      "steps" : [ {
+                        "name" : "AppiumLibrary.Wait Until Page Contains",
+                        "time" : {
+                          "start" : 1743194323298,
+                          "stop" : 1743194339034,
+                          "duration" : 15736
+                        },
+                        "status" : "failed",
+                        "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                        "steps" : [ {
+                          "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+                          "time" : {
+                            "start" : 1743194338578,
+                            "stop" : 1743194339032,
+                            "duration" : 454
+                          },
+                          "status" : "failed",
+                          "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+                          "steps" : [ ],
+                          "attachments" : [ {
+                            "name" : "screenshot",
+                            "type" : "image/jpg",
+                            "size" : 0
+                          }, {
+                            "uid" : "76c2f41a151ca879",
+                            "name" : "Keyword Log",
+                            "source" : "76c2f41a151ca879.html",
+                            "type" : "text/html",
+                            "size" : 148017
+                          } ],
+                          "parameters" : [ ],
+                          "stepsCount" : 0,
+                          "attachmentsCount" : 2,
+                          "shouldDisplayMessage" : true,
+                          "hasContent" : true
+                        } ],
+                        "attachments" : [ {
+                          "uid" : "2dc32749a2a291eb",
+                          "name" : "Keyword Log",
+                          "source" : "2dc32749a2a291eb.html",
+                          "type" : "text/html",
+                          "size" : 259
+                        } ],
+                        "parameters" : [ {
+                          "name" : "arg1",
+                          "value" : "${locator}"
+                        } ],
+                        "stepsCount" : 1,
+                        "attachmentsCount" : 3,
+                        "shouldDisplayMessage" : true,
+                        "hasContent" : true
+                      } ],
+                      "attachments" : [ {
+                        "uid" : "876813e8bcaa1aa8",
+                        "name" : "Keyword Log",
+                        "source" : "876813e8bcaa1aa8.html",
+                        "type" : "text/html",
+                        "size" : 50
+                      } ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "Wait Until Page Contains"
+                      }, {
+                        "name" : "arg2",
+                        "value" : "${locator}"
+                      } ],
+                      "stepsCount" : 2,
+                      "attachmentsCount" : 4,
+                      "shouldDisplayMessage" : false,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Run Keyword If",
+                      "time" : {
+                        "start" : 1743194339034,
+                        "stop" : 1743194339035,
+                        "duration" : 1
+                      },
+                      "status" : "passed",
+                      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                      "steps" : [ {
+                        "name" : "BuiltIn.Exit For Loop",
+                        "time" : {
+                          "start" : 1743194339035,
+                          "stop" : 1743194339035,
+                          "duration" : 0
+                        },
+                        "status" : "passed",
+                        "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                        "steps" : [ ],
+                        "attachments" : [ {
+                          "uid" : "27aa0dbe38267e51",
+                          "name" : "Keyword Log",
+                          "source" : "27aa0dbe38267e51.html",
+                          "type" : "text/html",
+                          "size" : 54
+                        } ],
+                        "parameters" : [ ],
+                        "stepsCount" : 0,
+                        "attachmentsCount" : 1,
+                        "shouldDisplayMessage" : true,
+                        "hasContent" : true
+                      } ],
+                      "attachments" : [ ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "not ${still_visible}"
+                      }, {
+                        "name" : "arg2",
+                        "value" : "Exit For Loop"
+                      } ],
+                      "stepsCount" : 1,
+                      "attachmentsCount" : 1,
+                      "shouldDisplayMessage" : false,
+                      "hasContent" : true
+                    } ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "stepsCount" : 8,
+                    "attachmentsCount" : 8,
+                    "shouldDisplayMessage" : false,
+                    "hasContent" : true
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "stepsCount" : 16,
+                  "attachmentsCount" : 12,
+                  "shouldDisplayMessage" : false,
+                  "hasContent" : true
+                }, {
+                  "name" : "BuiltIn.Run Keyword If",
+                  "time" : {
+                    "start" : 1743194339036,
+                    "stop" : 1743194339036,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${still_visible}"
+                  }, {
+                    "name" : "arg2",
+                    "value" : "Log"
+                  }, {
+                    "name" : "arg3",
+                    "value" : "Text still visible after 3 attempts."
+                  } ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 0,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                } ],
+                "stepsCount" : 21,
+                "attachmentsCount" : 14,
+                "shouldDisplayMessage" : false,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "${has_accessibility} or ${has_id}"
+              }, {
+                "name" : "arg2",
+                "value" : "Flow With ID Or Accessibility ID"
+              }, {
+                "name" : "arg3",
+                "value" : "${locator}"
+              }, {
+                "name" : "arg4",
+                "value" : "ELSE"
+              }, {
+                "name" : "arg5",
+                "value" : "Flow Without ID Or Accessibility ID"
+              }, {
+                "name" : "arg6",
+                "value" : "${locator}"
+              } ],
+              "stepsCount" : 22,
+              "attachmentsCount" : 14,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Log in"
+            } ],
+            "stepsCount" : 27,
+            "attachmentsCount" : 18,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "helpers_keywords.Handle Element Based On Locator",
+            "time" : {
+              "start" : 1743194339037,
+              "stop" : 1743194354724,
+              "duration" : 15687
+            },
+            "status" : "failed",
+            "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+            "steps" : [ {
+              "name" : "BuiltIn.Run Keyword And Return Status",
+              "time" : {
+                "start" : 1743194339037,
+                "stop" : 1743194339038,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "'Log in' does not contain 'accessibility_id='",
+              "steps" : [ {
+                "name" : "BuiltIn.Should Contain",
+                "time" : {
+                  "start" : 1743194339037,
+                  "stop" : 1743194339038,
+                  "duration" : 1
+                },
+                "status" : "failed",
+                "statusMessage" : "'Log in' does not contain 'accessibility_id='",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "8525efeca96d3232",
+                  "name" : "Keyword Log",
+                  "source" : "8525efeca96d3232.html",
+                  "type" : "text/html",
+                  "size" : 90
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                }, {
+                  "name" : "arg2",
+                  "value" : "accessibility_id="
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              } ],
+              "attachments" : [ {
+                "uid" : "fe6485f5273f0fe3",
+                "name" : "Keyword Log",
+                "source" : "fe6485f5273f0fe3.html",
+                "type" : "text/html",
+                "size" : 54
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "Should Contain"
+              }, {
+                "name" : "arg2",
+                "value" : "${locator}"
+              }, {
+                "name" : "arg3",
+                "value" : "accessibility_id="
+              } ],
+              "stepsCount" : 1,
+              "attachmentsCount" : 2,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Run Keyword And Return Status",
+              "time" : {
+                "start" : 1743194339038,
+                "stop" : 1743194339039,
+                "duration" : 1
+              },
+              "status" : "passed",
+              "statusMessage" : "'Log in' does not contain 'id='",
+              "steps" : [ {
+                "name" : "BuiltIn.Should Contain",
+                "time" : {
+                  "start" : 1743194339038,
+                  "stop" : 1743194339039,
+                  "duration" : 1
+                },
+                "status" : "failed",
+                "statusMessage" : "'Log in' does not contain 'id='",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "d321bf43d9ac422",
+                  "name" : "Keyword Log",
+                  "source" : "d321bf43d9ac422.html",
+                  "type" : "text/html",
+                  "size" : 76
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                }, {
+                  "name" : "arg2",
+                  "value" : "id="
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              } ],
+              "attachments" : [ {
+                "uid" : "9246e08985d4289a",
+                "name" : "Keyword Log",
+                "source" : "9246e08985d4289a.html",
+                "type" : "text/html",
+                "size" : 43
+              } ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "Should Contain"
+              }, {
+                "name" : "arg2",
+                "value" : "${locator}"
+              }, {
+                "name" : "arg3",
+                "value" : "id="
+              } ],
+              "stepsCount" : 1,
+              "attachmentsCount" : 2,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            }, {
+              "name" : "BuiltIn.Run Keyword If",
+              "time" : {
+                "start" : 1743194339039,
+                "stop" : 1743194354724,
+                "duration" : 15685
+              },
+              "status" : "failed",
+              "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+              "steps" : [ {
+                "name" : "helpers_keywords.Flow Without ID Or Accessibility ID",
+                "time" : {
+                  "start" : 1743194339040,
+                  "stop" : 1743194354723,
+                  "duration" : 15683
+                },
+                "status" : "failed",
+                "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                "steps" : [ {
+                  "name" : "AppiumLibrary.Wait Until Page Contains",
+                  "time" : {
+                    "start" : 1743194339040,
+                    "stop" : 1743194354720,
+                    "duration" : 15680
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                  "steps" : [ {
+                    "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+                    "time" : {
+                      "start" : 1743194354309,
+                      "stop" : 1743194354719,
+                      "duration" : 410
+                    },
+                    "status" : "failed",
+                    "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+                    "steps" : [ ],
+                    "attachments" : [ {
+                      "name" : "screenshot",
+                      "type" : "image/jpg",
+                      "size" : 0
+                    }, {
+                      "uid" : "a21c0d3c1b3f72c5",
+                      "name" : "Keyword Log",
+                      "source" : "a21c0d3c1b3f72c5.html",
+                      "type" : "text/html",
+                      "size" : 146273
+                    } ],
+                    "parameters" : [ ],
+                    "stepsCount" : 0,
+                    "attachmentsCount" : 2,
+                    "shouldDisplayMessage" : true,
+                    "hasContent" : true
+                  } ],
+                  "attachments" : [ {
+                    "uid" : "67dc78c5bad97e80",
+                    "name" : "Keyword Log",
+                    "source" : "67dc78c5bad97e80.html",
+                    "type" : "text/html",
+                    "size" : 21686
+                  } ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${locator}"
+                  } ],
+                  "stepsCount" : 1,
+                  "attachmentsCount" : 3,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                }, {
+                  "name" : "BuiltIn.Log",
+                  "time" : {
+                    "start" : 1743194354721,
+                    "stop" : 1743194354721,
+                    "duration" : 0
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "Starting click with retry logic for: ${locator}"
+                  } ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 0,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                }, {
+                  "name" : "BuiltIn.Set Variable",
+                  "time" : {
+                    "start" : 1743194354721,
+                    "stop" : 1743194354721,
+                    "duration" : 0
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${True}"
+                  } ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 0,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                }, {
+                  "name" : "${index}    IN RANGE    3",
+                  "time" : {
+                    "start" : 1743194354721,
+                    "stop" : 1743194354723,
+                    "duration" : 2
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                  "steps" : [ {
+                    "name" : "${index} = ",
+                    "time" : {
+                      "start" : 1743194354721,
+                      "stop" : 1743194354723,
+                      "duration" : 2
+                    },
+                    "status" : "failed",
+                    "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                    "steps" : [ {
+                      "name" : "BuiltIn.Log",
+                      "time" : {
+                        "start" : 1743194354722,
+                        "stop" : 1743194354722,
+                        "duration" : 0
+                      },
+                      "status" : "failed",
+                      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                      "steps" : [ ],
+                      "attachments" : [ ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "Attempt ${index + 1} to click text: ${locator}"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 0,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "AppiumLibrary.Click Text",
+                      "time" : {
+                        "start" : 1743194354722,
+                        "stop" : 1743194354722,
+                        "duration" : 0
+                      },
+                      "status" : "failed",
+                      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                      "steps" : [ ],
+                      "attachments" : [ ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "${locator}"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 0,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Sleep",
+                      "time" : {
+                        "start" : 1743194354722,
+                        "stop" : 1743194354722,
+                        "duration" : 0
+                      },
+                      "status" : "failed",
+                      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                      "steps" : [ ],
+                      "attachments" : [ ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "1s"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 0,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Run Keyword And Return Status",
+                      "time" : {
+                        "start" : 1743194354722,
+                        "stop" : 1743194354722,
+                        "duration" : 0
+                      },
+                      "status" : "failed",
+                      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                      "steps" : [ ],
+                      "attachments" : [ ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "Wait Until Page Contains"
+                      }, {
+                        "name" : "arg2",
+                        "value" : "${locator}"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 0,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    }, {
+                      "name" : "BuiltIn.Run Keyword If",
+                      "time" : {
+                        "start" : 1743194354723,
+                        "stop" : 1743194354723,
+                        "duration" : 0
+                      },
+                      "status" : "failed",
+                      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                      "steps" : [ ],
+                      "attachments" : [ ],
+                      "parameters" : [ {
+                        "name" : "arg1",
+                        "value" : "not ${still_visible}"
+                      }, {
+                        "name" : "arg2",
+                        "value" : "Exit For Loop"
+                      } ],
+                      "stepsCount" : 0,
+                      "attachmentsCount" : 0,
+                      "shouldDisplayMessage" : true,
+                      "hasContent" : true
+                    } ],
+                    "attachments" : [ ],
+                    "parameters" : [ ],
+                    "stepsCount" : 5,
+                    "attachmentsCount" : 0,
+                    "shouldDisplayMessage" : false,
+                    "hasContent" : true
+                  } ],
+                  "attachments" : [ ],
+                  "parameters" : [ ],
+                  "stepsCount" : 6,
+                  "attachmentsCount" : 0,
+                  "shouldDisplayMessage" : false,
+                  "hasContent" : true
+                }, {
+                  "name" : "BuiltIn.Run Keyword If",
+                  "time" : {
+                    "start" : 1743194354723,
+                    "stop" : 1743194354723,
+                    "duration" : 0
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+                  "steps" : [ ],
+                  "attachments" : [ ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${still_visible}"
+                  }, {
+                    "name" : "arg2",
+                    "value" : "Log"
+                  }, {
+                    "name" : "arg3",
+                    "value" : "Text still visible after 3 attempts."
+                  } ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 0,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                } ],
+                "stepsCount" : 12,
+                "attachmentsCount" : 3,
+                "shouldDisplayMessage" : false,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ {
+                "name" : "arg1",
+                "value" : "${has_accessibility} or ${has_id}"
+              }, {
+                "name" : "arg2",
+                "value" : "Flow With ID Or Accessibility ID"
+              }, {
+                "name" : "arg3",
+                "value" : "${locator}"
+              }, {
+                "name" : "arg4",
+                "value" : "ELSE"
+              }, {
+                "name" : "arg5",
+                "value" : "Flow Without ID Or Accessibility ID"
+              }, {
+                "name" : "arg6",
+                "value" : "${locator}"
+              } ],
+              "stepsCount" : 13,
+              "attachmentsCount" : 3,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Log in"
+            } ],
+            "stepsCount" : 18,
+            "attachmentsCount" : 7,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "AppiumLibrary.Wait Until Page Contains",
+            "time" : {
+              "start" : 1743194354724,
+              "stop" : 1743194354724,
+              "duration" : 0
+            },
+            "status" : "failed",
+            "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Login methods:"
+            }, {
+              "name" : "arg2",
+              "value" : "8"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 48,
+          "attachmentsCount" : 25,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "login_keywords.When he insert the phone number to log in",
+          "time" : {
+            "start" : 1743194354726,
+            "stop" : 1743194354726,
+            "duration" : 0
+          },
+          "status" : "failed",
+          "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        }, {
+          "name" : "login_keywords.And he insert the OTP code",
+          "time" : {
+            "start" : 1743194354726,
+            "stop" : 1743194354726,
+            "duration" : 0
+          },
+          "status" : "failed",
+          "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 51,
+        "attachmentsCount" : 25,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 55,
+      "attachmentsCount" : 25,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "login_keywords.When the user was logged in and go to create a new client and do a estimate for this client",
+      "time" : {
+        "start" : 1743194354727,
+        "stop" : 1743194354727,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "login_keywords.Then the user creates a new client and do a estimate for this client",
+      "time" : {
+        "start" : 1743194354727,
+        "stop" : 1743194354727,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Log in' did not appear in 15 seconds",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 58,
+    "attachmentsCount" : 25,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "logged_out_keywords.Logout and validate session termination",
+    "time" : {
+      "stop" : 1743194427443
+    },
+    "status" : "failed",
+    "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+    "steps" : [ {
+      "name" : "AppiumLibrary.Wait Until Page Contains",
+      "time" : {
+        "start" : 1743194354728,
+        "stop" : 1743194370375,
+        "duration" : 15647
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Estimates' did not appear in 15 seconds",
+      "steps" : [ {
+        "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+        "time" : {
+          "start" : 1743194369950,
+          "stop" : 1743194370373,
+          "duration" : 423
+        },
+        "status" : "failed",
+        "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+        "steps" : [ ],
+        "attachments" : [ {
+          "name" : "screenshot",
+          "type" : "image/jpg",
+          "size" : 0
+        }, {
+          "uid" : "739a90c91c15435c",
+          "name" : "Keyword Log",
+          "source" : "739a90c91c15435c.html",
+          "type" : "text/html",
+          "size" : 146273
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "3e098929c751316b",
+        "name" : "Keyword Log",
+        "source" : "3e098929c751316b.html",
+        "type" : "text/html",
+        "size" : 21689
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Estimates"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "helpers_keywords.Handle Element Based On Locator",
+      "time" : {
+        "start" : 1743194370375,
+        "stop" : 1743194372855,
+        "duration" : 2480
+      },
+      "status" : "failed",
+      "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+      "steps" : [ {
+        "name" : "BuiltIn.Run Keyword And Return Status",
+        "time" : {
+          "start" : 1743194370375,
+          "stop" : 1743194370376,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "statusMessage" : "Text 'Estimates' did not appear in 15 seconds",
+        "steps" : [ {
+          "name" : "BuiltIn.Should Contain",
+          "time" : {
+            "start" : 1743194370376,
+            "stop" : 1743194370376,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "statusMessage" : "Text 'Estimates' did not appear in 15 seconds",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          }, {
+            "name" : "arg2",
+            "value" : "accessibility_id="
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "17bdb90d5af797ea",
+          "name" : "Keyword Log",
+          "source" : "17bdb90d5af797ea.html",
+          "type" : "text/html",
+          "size" : 53
+        } ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Should Contain"
+        }, {
+          "name" : "arg2",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg3",
+          "value" : "accessibility_id="
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword And Return Status",
+        "time" : {
+          "start" : 1743194370376,
+          "stop" : 1743194370377,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "statusMessage" : "Text 'Estimates' did not appear in 15 seconds",
+        "steps" : [ {
+          "name" : "BuiltIn.Should Contain",
+          "time" : {
+            "start" : 1743194370376,
+            "stop" : 1743194370377,
+            "duration" : 1
+          },
+          "status" : "passed",
+          "statusMessage" : "Text 'Estimates' did not appear in 15 seconds",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          }, {
+            "name" : "arg2",
+            "value" : "id="
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "d629b1b683dea8f9",
+          "name" : "Keyword Log",
+          "source" : "d629b1b683dea8f9.html",
+          "type" : "text/html",
+          "size" : 42
+        } ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Should Contain"
+        }, {
+          "name" : "arg2",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg3",
+          "value" : "id="
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword If",
+        "time" : {
+          "start" : 1743194370377,
+          "stop" : 1743194372854,
+          "duration" : 2477
+        },
+        "status" : "failed",
+        "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+        "steps" : [ {
+          "name" : "helpers_keywords.Flow With ID Or Accessibility ID",
+          "time" : {
+            "start" : 1743194370378,
+            "stop" : 1743194372854,
+            "duration" : 2476
+          },
+          "status" : "failed",
+          "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+          "steps" : [ {
+            "name" : "AppiumLibrary.Element Should Be Visible",
+            "time" : {
+              "start" : 1743194370378,
+              "stop" : 1743194370869,
+              "duration" : 491
+            },
+            "status" : "failed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+            "steps" : [ {
+              "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+              "time" : {
+                "start" : 1743194370469,
+                "stop" : 1743194370868,
+                "duration" : 399
+              },
+              "status" : "failed",
+              "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+              "steps" : [ ],
+              "attachments" : [ {
+                "name" : "screenshot",
+                "type" : "image/jpg",
+                "size" : 0
+              }, {
+                "uid" : "63ecf09070b20570",
+                "name" : "Keyword Log",
+                "source" : "63ecf09070b20570.html",
+                "type" : "text/html",
+                "size" : 146273
+              } ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 2,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            } ],
+            "attachments" : [ {
+              "uid" : "900e7144c694af57",
+              "name" : "Keyword Log",
+              "source" : "900e7144c694af57.html",
+              "type" : "text/html",
+              "size" : 300
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${locator}"
+            } ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 3,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Log",
+            "time" : {
+              "start" : 1743194370869,
+              "stop" : 1743194370870,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "de23d74cecfebbf5",
+              "name" : "Keyword Log",
+              "source" : "de23d74cecfebbf5.html",
+              "type" : "text/html",
+              "size" : 88
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Starting click with retry logic for: ${locator}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Set Variable",
+            "time" : {
+              "start" : 1743194370870,
+              "stop" : 1743194370870,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "d05230977cc43cda",
+              "name" : "Keyword Log",
+              "source" : "d05230977cc43cda.html",
+              "type" : "text/html",
+              "size" : 49
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${True}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "${index}    IN RANGE    3",
+            "time" : {
+              "start" : 1743194370871,
+              "stop" : 1743194372854,
+              "duration" : 1983
+            },
+            "status" : "failed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+            "steps" : [ {
+              "name" : "${index} = 0",
+              "time" : {
+                "start" : 1743194370871,
+                "stop" : 1743194372853,
+                "duration" : 1982
+              },
+              "status" : "failed",
+              "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+              "steps" : [ {
+                "name" : "BuiltIn.Log",
+                "time" : {
+                  "start" : 1743194370871,
+                  "stop" : 1743194370872,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "d73ceec95866ba22",
+                  "name" : "Keyword Log",
+                  "source" : "d73ceec95866ba22.html",
+                  "type" : "text/html",
+                  "size" : 79
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "Attempt ${index + 1} to click element: ${locator}"
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "AppiumLibrary.Click Element",
+                "time" : {
+                  "start" : 1743194370872,
+                  "stop" : 1743194371347,
+                  "duration" : 475
+                },
+                "status" : "failed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+                "steps" : [ {
+                  "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+                  "time" : {
+                    "start" : 1743194370967,
+                    "stop" : 1743194371346,
+                    "duration" : 379
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+                  "steps" : [ ],
+                  "attachments" : [ {
+                    "name" : "screenshot",
+                    "type" : "image/jpg",
+                    "size" : 0
+                  }, {
+                    "uid" : "80a0ad4ed5b4975a",
+                    "name" : "Keyword Log",
+                    "source" : "80a0ad4ed5b4975a.html",
+                    "type" : "text/html",
+                    "size" : 146273
+                  } ],
+                  "parameters" : [ ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 2,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ {
+                  "uid" : "1dcad66d0cda14d9",
+                  "name" : "Keyword Log",
+                  "source" : "1dcad66d0cda14d9.html",
+                  "type" : "text/html",
+                  "size" : 371
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                } ],
+                "stepsCount" : 1,
+                "attachmentsCount" : 3,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Sleep",
+                "time" : {
+                  "start" : 1743194371347,
+                  "stop" : 1743194372348,
+                  "duration" : 1001
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "534e2e9a50d45c60",
+                  "name" : "Keyword Log",
+                  "source" : "534e2e9a50d45c60.html",
+                  "type" : "text/html",
+                  "size" : 41
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "1s"
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Run Keyword And Return Status",
+                "time" : {
+                  "start" : 1743194372348,
+                  "stop" : 1743194372852,
+                  "duration" : 504
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+                "steps" : [ {
+                  "name" : "AppiumLibrary.Element Should Be Visible",
+                  "time" : {
+                    "start" : 1743194372348,
+                    "stop" : 1743194372852,
+                    "duration" : 504
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+                  "steps" : [ {
+                    "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+                    "time" : {
+                      "start" : 1743194372430,
+                      "stop" : 1743194372850,
+                      "duration" : 420
+                    },
+                    "status" : "failed",
+                    "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+                    "steps" : [ ],
+                    "attachments" : [ {
+                      "name" : "screenshot",
+                      "type" : "image/jpg",
+                      "size" : 0
+                    }, {
+                      "uid" : "d300f63fb000f9a0",
+                      "name" : "Keyword Log",
+                      "source" : "d300f63fb000f9a0.html",
+                      "type" : "text/html",
+                      "size" : 146273
+                    } ],
+                    "parameters" : [ ],
+                    "stepsCount" : 0,
+                    "attachmentsCount" : 2,
+                    "shouldDisplayMessage" : true,
+                    "hasContent" : true
+                  } ],
+                  "attachments" : [ {
+                    "uid" : "cb2ae77701716b9",
+                    "name" : "Keyword Log",
+                    "source" : "cb2ae77701716b9.html",
+                    "type" : "text/html",
+                    "size" : 300
+                  } ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${locator}"
+                  } ],
+                  "stepsCount" : 1,
+                  "attachmentsCount" : 3,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ {
+                  "uid" : "a7b3fed3ba16771",
+                  "name" : "Keyword Log",
+                  "source" : "a7b3fed3ba16771.html",
+                  "type" : "text/html",
+                  "size" : 50
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "Element Should Be Visible"
+                }, {
+                  "name" : "arg2",
+                  "value" : "${locator}"
+                } ],
+                "stepsCount" : 2,
+                "attachmentsCount" : 4,
+                "shouldDisplayMessage" : false,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Run Keyword If",
+                "time" : {
+                  "start" : 1743194372852,
+                  "stop" : 1743194372853,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+                "steps" : [ {
+                  "name" : "BuiltIn.Exit For Loop",
+                  "time" : {
+                    "start" : 1743194372853,
+                    "stop" : 1743194372853,
+                    "duration" : 0
+                  },
+                  "status" : "passed",
+                  "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+                  "steps" : [ ],
+                  "attachments" : [ {
+                    "uid" : "f85f99d121f176e1",
+                    "name" : "Keyword Log",
+                    "source" : "f85f99d121f176e1.html",
+                    "type" : "text/html",
+                    "size" : 54
+                  } ],
+                  "parameters" : [ ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 1,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "not ${still_visible}"
+                }, {
+                  "name" : "arg2",
+                  "value" : "Exit For Loop"
+                } ],
+                "stepsCount" : 1,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : false,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 9,
+              "attachmentsCount" : 10,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 10,
+            "attachmentsCount" : 10,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Run Keyword If",
+            "time" : {
+              "start" : 1743194372854,
+              "stop" : 1743194372854,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${still_visible}"
+            }, {
+              "name" : "arg2",
+              "value" : "Log"
+            }, {
+              "name" : "arg3",
+              "value" : "Element still visible after 3 attempts."
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          } ],
+          "stepsCount" : 16,
+          "attachmentsCount" : 15,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "${has_accessibility} or ${has_id}"
+        }, {
+          "name" : "arg2",
+          "value" : "Flow With ID Or Accessibility ID"
+        }, {
+          "name" : "arg3",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg4",
+          "value" : "ELSE"
+        }, {
+          "name" : "arg5",
+          "value" : "Flow Without ID Or Accessibility ID"
+        }, {
+          "name" : "arg6",
+          "value" : "${locator}"
+        } ],
+        "stepsCount" : 17,
+        "attachmentsCount" : 15,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "accessibility_id=settings"
+      } ],
+      "stepsCount" : 22,
+      "attachmentsCount" : 17,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibrary.Swipe By Percent",
+      "time" : {
+        "start" : 1743194372855,
+        "stop" : 1743194375533,
+        "duration" : 2678
+      },
+      "status" : "passed",
+      "statusMessage" : "ValueError: Element locator 'accessibility_id=settings' did not match any elements.",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "50"
+      }, {
+        "name" : "arg2",
+        "value" : "57"
+      }, {
+        "name" : "arg3",
+        "value" : "50"
+      }, {
+        "name" : "arg4",
+        "value" : "90"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "helpers_keywords.Handle Element Based On Locator",
+      "time" : {
+        "start" : 1743194375534,
+        "stop" : 1743194408584,
+        "duration" : 33050
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+      "steps" : [ {
+        "name" : "BuiltIn.Run Keyword And Return Status",
+        "time" : {
+          "start" : 1743194375534,
+          "stop" : 1743194375535,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "statusMessage" : "'Log out' does not contain 'accessibility_id='",
+        "steps" : [ {
+          "name" : "BuiltIn.Should Contain",
+          "time" : {
+            "start" : 1743194375534,
+            "stop" : 1743194375535,
+            "duration" : 1
+          },
+          "status" : "failed",
+          "statusMessage" : "'Log out' does not contain 'accessibility_id='",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "404d8d51759bc66a",
+            "name" : "Keyword Log",
+            "source" : "404d8d51759bc66a.html",
+            "type" : "text/html",
+            "size" : 91
+          } ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          }, {
+            "name" : "arg2",
+            "value" : "accessibility_id="
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "21a1e5e74d28e949",
+          "name" : "Keyword Log",
+          "source" : "21a1e5e74d28e949.html",
+          "type" : "text/html",
+          "size" : 54
+        } ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Should Contain"
+        }, {
+          "name" : "arg2",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg3",
+          "value" : "accessibility_id="
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword And Return Status",
+        "time" : {
+          "start" : 1743194375535,
+          "stop" : 1743194375536,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "statusMessage" : "'Log out' does not contain 'id='",
+        "steps" : [ {
+          "name" : "BuiltIn.Should Contain",
+          "time" : {
+            "start" : 1743194375536,
+            "stop" : 1743194375536,
+            "duration" : 0
+          },
+          "status" : "failed",
+          "statusMessage" : "'Log out' does not contain 'id='",
+          "steps" : [ ],
+          "attachments" : [ {
+            "uid" : "4663020dd7c16910",
+            "name" : "Keyword Log",
+            "source" : "4663020dd7c16910.html",
+            "type" : "text/html",
+            "size" : 77
+          } ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          }, {
+            "name" : "arg2",
+            "value" : "id="
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "acdc78f1faaf5a42",
+          "name" : "Keyword Log",
+          "source" : "acdc78f1faaf5a42.html",
+          "type" : "text/html",
+          "size" : 43
+        } ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Should Contain"
+        }, {
+          "name" : "arg2",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg3",
+          "value" : "id="
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword If",
+        "time" : {
+          "start" : 1743194375537,
+          "stop" : 1743194408584,
+          "duration" : 33047
+        },
+        "status" : "failed",
+        "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+        "steps" : [ {
+          "name" : "helpers_keywords.Flow Without ID Or Accessibility ID",
+          "time" : {
+            "start" : 1743194375537,
+            "stop" : 1743194408584,
+            "duration" : 33047
+          },
+          "status" : "failed",
+          "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+          "steps" : [ {
+            "name" : "AppiumLibrary.Wait Until Page Contains",
+            "time" : {
+              "start" : 1743194375537,
+              "stop" : 1743194391316,
+              "duration" : 15779
+            },
+            "status" : "failed",
+            "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+            "steps" : [ {
+              "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+              "time" : {
+                "start" : 1743194390919,
+                "stop" : 1743194391315,
+                "duration" : 396
+              },
+              "status" : "failed",
+              "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+              "steps" : [ ],
+              "attachments" : [ {
+                "name" : "screenshot",
+                "type" : "image/jpg",
+                "size" : 0
+              }, {
+                "uid" : "7a81824f634166b3",
+                "name" : "Keyword Log",
+                "source" : "7a81824f634166b3.html",
+                "type" : "text/html",
+                "size" : 146273
+              } ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 2,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            } ],
+            "attachments" : [ {
+              "uid" : "a7f1b1f06cf79870",
+              "name" : "Keyword Log",
+              "source" : "a7f1b1f06cf79870.html",
+              "type" : "text/html",
+              "size" : 21687
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${locator}"
+            } ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 3,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Log",
+            "time" : {
+              "start" : 1743194391317,
+              "stop" : 1743194391317,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "9205635624fb2e1c",
+              "name" : "Keyword Log",
+              "source" : "9205635624fb2e1c.html",
+              "type" : "text/html",
+              "size" : 70
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Starting click with retry logic for: ${locator}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Set Variable",
+            "time" : {
+              "start" : 1743194391317,
+              "stop" : 1743194391318,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "cb7885014bf4a51a",
+              "name" : "Keyword Log",
+              "source" : "cb7885014bf4a51a.html",
+              "type" : "text/html",
+              "size" : 49
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${True}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "${index}    IN RANGE    3",
+            "time" : {
+              "start" : 1743194391318,
+              "stop" : 1743194408583,
+              "duration" : 17265
+            },
+            "status" : "failed",
+            "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+            "steps" : [ {
+              "name" : "${index} = 0",
+              "time" : {
+                "start" : 1743194391318,
+                "stop" : 1743194408583,
+                "duration" : 17265
+              },
+              "status" : "failed",
+              "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+              "steps" : [ {
+                "name" : "BuiltIn.Log",
+                "time" : {
+                  "start" : 1743194391318,
+                  "stop" : 1743194391319,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "1bd605ef6671b701",
+                  "name" : "Keyword Log",
+                  "source" : "1bd605ef6671b701.html",
+                  "type" : "text/html",
+                  "size" : 58
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "Attempt ${index + 1} to click text: ${locator}"
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "AppiumLibrary.Click Text",
+                "time" : {
+                  "start" : 1743194391319,
+                  "stop" : 1743194391856,
+                  "duration" : 537
+                },
+                "status" : "failed",
+                "statusMessage" : "ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.",
+                "steps" : [ {
+                  "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+                  "time" : {
+                    "start" : 1743194391469,
+                    "stop" : 1743194391855,
+                    "duration" : 386
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+                  "steps" : [ ],
+                  "attachments" : [ {
+                    "name" : "screenshot",
+                    "type" : "image/jpg",
+                    "size" : 0
+                  }, {
+                    "uid" : "bf1873d866a90e18",
+                    "name" : "Keyword Log",
+                    "source" : "bf1873d866a90e18.html",
+                    "type" : "text/html",
+                    "size" : 146273
+                  } ],
+                  "parameters" : [ ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 2,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ {
+                  "uid" : "c2cccdc6daa08565",
+                  "name" : "Keyword Log",
+                  "source" : "c2cccdc6daa08565.html",
+                  "type" : "text/html",
+                  "size" : 377
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                } ],
+                "stepsCount" : 1,
+                "attachmentsCount" : 3,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Sleep",
+                "time" : {
+                  "start" : 1743194391857,
+                  "stop" : 1743194392857,
+                  "duration" : 1000
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "6d2ff0e19cfd89aa",
+                  "name" : "Keyword Log",
+                  "source" : "6d2ff0e19cfd89aa.html",
+                  "type" : "text/html",
+                  "size" : 41
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "1s"
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Run Keyword And Return Status",
+                "time" : {
+                  "start" : 1743194392858,
+                  "stop" : 1743194408582,
+                  "duration" : 15724
+                },
+                "status" : "passed",
+                "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+                "steps" : [ {
+                  "name" : "AppiumLibrary.Wait Until Page Contains",
+                  "time" : {
+                    "start" : 1743194392858,
+                    "stop" : 1743194408582,
+                    "duration" : 15724
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+                  "steps" : [ {
+                    "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+                    "time" : {
+                      "start" : 1743194408151,
+                      "stop" : 1743194408580,
+                      "duration" : 429
+                    },
+                    "status" : "failed",
+                    "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+                    "steps" : [ ],
+                    "attachments" : [ {
+                      "name" : "screenshot",
+                      "type" : "image/jpg",
+                      "size" : 0
+                    }, {
+                      "uid" : "1d42b048b9b0374",
+                      "name" : "Keyword Log",
+                      "source" : "1d42b048b9b0374.html",
+                      "type" : "text/html",
+                      "size" : 144753
+                    } ],
+                    "parameters" : [ ],
+                    "stepsCount" : 0,
+                    "attachmentsCount" : 2,
+                    "shouldDisplayMessage" : true,
+                    "hasContent" : true
+                  } ],
+                  "attachments" : [ {
+                    "uid" : "37397b6000181028",
+                    "name" : "Keyword Log",
+                    "source" : "37397b6000181028.html",
+                    "type" : "text/html",
+                    "size" : 260
+                  } ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${locator}"
+                  } ],
+                  "stepsCount" : 1,
+                  "attachmentsCount" : 3,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ {
+                  "uid" : "5f1dcbb2ea6eaf2c",
+                  "name" : "Keyword Log",
+                  "source" : "5f1dcbb2ea6eaf2c.html",
+                  "type" : "text/html",
+                  "size" : 50
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "Wait Until Page Contains"
+                }, {
+                  "name" : "arg2",
+                  "value" : "${locator}"
+                } ],
+                "stepsCount" : 2,
+                "attachmentsCount" : 4,
+                "shouldDisplayMessage" : false,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Run Keyword If",
+                "time" : {
+                  "start" : 1743194408582,
+                  "stop" : 1743194408583,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+                "steps" : [ {
+                  "name" : "BuiltIn.Exit For Loop",
+                  "time" : {
+                    "start" : 1743194408582,
+                    "stop" : 1743194408583,
+                    "duration" : 1
+                  },
+                  "status" : "passed",
+                  "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+                  "steps" : [ ],
+                  "attachments" : [ {
+                    "uid" : "1feaaa8695f485e4",
+                    "name" : "Keyword Log",
+                    "source" : "1feaaa8695f485e4.html",
+                    "type" : "text/html",
+                    "size" : 54
+                  } ],
+                  "parameters" : [ ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 1,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "not ${still_visible}"
+                }, {
+                  "name" : "arg2",
+                  "value" : "Exit For Loop"
+                } ],
+                "stepsCount" : 1,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : false,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 9,
+              "attachmentsCount" : 10,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 10,
+            "attachmentsCount" : 10,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Run Keyword If",
+            "time" : {
+              "start" : 1743194408583,
+              "stop" : 1743194408584,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${still_visible}"
+            }, {
+              "name" : "arg2",
+              "value" : "Log"
+            }, {
+              "name" : "arg3",
+              "value" : "Text still visible after 3 attempts."
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          } ],
+          "stepsCount" : 16,
+          "attachmentsCount" : 15,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "${has_accessibility} or ${has_id}"
+        }, {
+          "name" : "arg2",
+          "value" : "Flow With ID Or Accessibility ID"
+        }, {
+          "name" : "arg3",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg4",
+          "value" : "ELSE"
+        }, {
+          "name" : "arg5",
+          "value" : "Flow Without ID Or Accessibility ID"
+        }, {
+          "name" : "arg6",
+          "value" : "${locator}"
+        } ],
+        "stepsCount" : 17,
+        "attachmentsCount" : 15,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Log out"
+      } ],
+      "stepsCount" : 22,
+      "attachmentsCount" : 19,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "helpers_keywords.Handle Element Based On Locator",
+      "time" : {
+        "start" : 1743194408584,
+        "stop" : 1743194411352,
+        "duration" : 2768
+      },
+      "status" : "failed",
+      "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+      "steps" : [ {
+        "name" : "BuiltIn.Run Keyword And Return Status",
+        "time" : {
+          "start" : 1743194408585,
+          "stop" : 1743194408586,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+        "steps" : [ {
+          "name" : "BuiltIn.Should Contain",
+          "time" : {
+            "start" : 1743194408585,
+            "stop" : 1743194408585,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          }, {
+            "name" : "arg2",
+            "value" : "accessibility_id="
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "342aeb94a26e62b5",
+          "name" : "Keyword Log",
+          "source" : "342aeb94a26e62b5.html",
+          "type" : "text/html",
+          "size" : 53
+        } ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Should Contain"
+        }, {
+          "name" : "arg2",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg3",
+          "value" : "accessibility_id="
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword And Return Status",
+        "time" : {
+          "start" : 1743194408586,
+          "stop" : 1743194408587,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+        "steps" : [ {
+          "name" : "BuiltIn.Should Contain",
+          "time" : {
+            "start" : 1743194408586,
+            "stop" : 1743194408586,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "statusMessage" : "Text 'Log out' did not appear in 15 seconds",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          }, {
+            "name" : "arg2",
+            "value" : "id="
+          } ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "5a73cdd8ff2551a1",
+          "name" : "Keyword Log",
+          "source" : "5a73cdd8ff2551a1.html",
+          "type" : "text/html",
+          "size" : 42
+        } ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "Should Contain"
+        }, {
+          "name" : "arg2",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg3",
+          "value" : "id="
+        } ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "BuiltIn.Run Keyword If",
+        "time" : {
+          "start" : 1743194408587,
+          "stop" : 1743194411352,
+          "duration" : 2765
+        },
+        "status" : "failed",
+        "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+        "steps" : [ {
+          "name" : "helpers_keywords.Flow With ID Or Accessibility ID",
+          "time" : {
+            "start" : 1743194408587,
+            "stop" : 1743194411352,
+            "duration" : 2765
+          },
+          "status" : "failed",
+          "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+          "steps" : [ {
+            "name" : "AppiumLibrary.Element Should Be Visible",
+            "time" : {
+              "start" : 1743194408587,
+              "stop" : 1743194409172,
+              "duration" : 585
+            },
+            "status" : "failed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+            "steps" : [ {
+              "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+              "time" : {
+                "start" : 1743194408776,
+                "stop" : 1743194409171,
+                "duration" : 395
+              },
+              "status" : "failed",
+              "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+              "steps" : [ ],
+              "attachments" : [ {
+                "name" : "screenshot",
+                "type" : "image/jpg",
+                "size" : 0
+              }, {
+                "uid" : "5e8fb3021933efd8",
+                "name" : "Keyword Log",
+                "source" : "5e8fb3021933efd8.html",
+                "type" : "text/html",
+                "size" : 144753
+              } ],
+              "parameters" : [ ],
+              "stepsCount" : 0,
+              "attachmentsCount" : 2,
+              "shouldDisplayMessage" : true,
+              "hasContent" : true
+            } ],
+            "attachments" : [ {
+              "uid" : "e73a3cd9a0c24744",
+              "name" : "Keyword Log",
+              "source" : "e73a3cd9a0c24744.html",
+              "type" : "text/html",
+              "size" : 308
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${locator}"
+            } ],
+            "stepsCount" : 1,
+            "attachmentsCount" : 3,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Log",
+            "time" : {
+              "start" : 1743194409173,
+              "stop" : 1743194409173,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "daa3c7b3ad3f91b4",
+              "name" : "Keyword Log",
+              "source" : "daa3c7b3ad3f91b4.html",
+              "type" : "text/html",
+              "size" : 96
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "Starting click with retry logic for: ${locator}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Set Variable",
+            "time" : {
+              "start" : 1743194409173,
+              "stop" : 1743194409174,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "7eecb19e8c7fa4b1",
+              "name" : "Keyword Log",
+              "source" : "7eecb19e8c7fa4b1.html",
+              "type" : "text/html",
+              "size" : 49
+            } ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${True}"
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          }, {
+            "name" : "${index}    IN RANGE    3",
+            "time" : {
+              "start" : 1743194409174,
+              "stop" : 1743194411351,
+              "duration" : 2177
+            },
+            "status" : "failed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+            "steps" : [ {
+              "name" : "${index} = 0",
+              "time" : {
+                "start" : 1743194409174,
+                "stop" : 1743194411351,
+                "duration" : 2177
+              },
+              "status" : "failed",
+              "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+              "steps" : [ {
+                "name" : "BuiltIn.Log",
+                "time" : {
+                  "start" : 1743194409174,
+                  "stop" : 1743194409175,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "1942ff7653678360",
+                  "name" : "Keyword Log",
+                  "source" : "1942ff7653678360.html",
+                  "type" : "text/html",
+                  "size" : 87
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "Attempt ${index + 1} to click element: ${locator}"
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "AppiumLibrary.Click Element",
+                "time" : {
+                  "start" : 1743194409175,
+                  "stop" : 1743194409690,
+                  "duration" : 515
+                },
+                "status" : "failed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+                "steps" : [ {
+                  "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+                  "time" : {
+                    "start" : 1743194409275,
+                    "stop" : 1743194409688,
+                    "duration" : 413
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+                  "steps" : [ ],
+                  "attachments" : [ {
+                    "name" : "screenshot",
+                    "type" : "image/jpg",
+                    "size" : 0
+                  }, {
+                    "uid" : "a5240a2fd9e4140f",
+                    "name" : "Keyword Log",
+                    "source" : "a5240a2fd9e4140f.html",
+                    "type" : "text/html",
+                    "size" : 144753
+                  } ],
+                  "parameters" : [ ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 2,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ {
+                  "uid" : "dd01ea4ec92a4161",
+                  "name" : "Keyword Log",
+                  "source" : "dd01ea4ec92a4161.html",
+                  "type" : "text/html",
+                  "size" : 387
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "${locator}"
+                } ],
+                "stepsCount" : 1,
+                "attachmentsCount" : 3,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Sleep",
+                "time" : {
+                  "start" : 1743194409690,
+                  "stop" : 1743194410691,
+                  "duration" : 1001
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+                "steps" : [ ],
+                "attachments" : [ {
+                  "uid" : "7601fb894ea9860d",
+                  "name" : "Keyword Log",
+                  "source" : "7601fb894ea9860d.html",
+                  "type" : "text/html",
+                  "size" : 41
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "1s"
+                } ],
+                "stepsCount" : 0,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : true,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Run Keyword And Return Status",
+                "time" : {
+                  "start" : 1743194410691,
+                  "stop" : 1743194411350,
+                  "duration" : 659
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+                "steps" : [ {
+                  "name" : "AppiumLibrary.Element Should Be Visible",
+                  "time" : {
+                    "start" : 1743194410691,
+                    "stop" : 1743194411349,
+                    "duration" : 658
+                  },
+                  "status" : "failed",
+                  "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+                  "steps" : [ {
+                    "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+                    "time" : {
+                      "start" : 1743194410908,
+                      "stop" : 1743194411348,
+                      "duration" : 440
+                    },
+                    "status" : "failed",
+                    "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+                    "steps" : [ ],
+                    "attachments" : [ {
+                      "name" : "screenshot",
+                      "type" : "image/jpg",
+                      "size" : 0
+                    }, {
+                      "uid" : "f60952344a1ca9d3",
+                      "name" : "Keyword Log",
+                      "source" : "f60952344a1ca9d3.html",
+                      "type" : "text/html",
+                      "size" : 144753
+                    } ],
+                    "parameters" : [ ],
+                    "stepsCount" : 0,
+                    "attachmentsCount" : 2,
+                    "shouldDisplayMessage" : true,
+                    "hasContent" : true
+                  } ],
+                  "attachments" : [ {
+                    "uid" : "444d24b2c82ad9e9",
+                    "name" : "Keyword Log",
+                    "source" : "444d24b2c82ad9e9.html",
+                    "type" : "text/html",
+                    "size" : 308
+                  } ],
+                  "parameters" : [ {
+                    "name" : "arg1",
+                    "value" : "${locator}"
+                  } ],
+                  "stepsCount" : 1,
+                  "attachmentsCount" : 3,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ {
+                  "uid" : "409709f81c33a75",
+                  "name" : "Keyword Log",
+                  "source" : "409709f81c33a75.html",
+                  "type" : "text/html",
+                  "size" : 50
+                } ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "Element Should Be Visible"
+                }, {
+                  "name" : "arg2",
+                  "value" : "${locator}"
+                } ],
+                "stepsCount" : 2,
+                "attachmentsCount" : 4,
+                "shouldDisplayMessage" : false,
+                "hasContent" : true
+              }, {
+                "name" : "BuiltIn.Run Keyword If",
+                "time" : {
+                  "start" : 1743194411350,
+                  "stop" : 1743194411351,
+                  "duration" : 1
+                },
+                "status" : "passed",
+                "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+                "steps" : [ {
+                  "name" : "BuiltIn.Exit For Loop",
+                  "time" : {
+                    "start" : 1743194411350,
+                    "stop" : 1743194411351,
+                    "duration" : 1
+                  },
+                  "status" : "passed",
+                  "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+                  "steps" : [ ],
+                  "attachments" : [ {
+                    "uid" : "cbead85d9c998427",
+                    "name" : "Keyword Log",
+                    "source" : "cbead85d9c998427.html",
+                    "type" : "text/html",
+                    "size" : 54
+                  } ],
+                  "parameters" : [ ],
+                  "stepsCount" : 0,
+                  "attachmentsCount" : 1,
+                  "shouldDisplayMessage" : true,
+                  "hasContent" : true
+                } ],
+                "attachments" : [ ],
+                "parameters" : [ {
+                  "name" : "arg1",
+                  "value" : "not ${still_visible}"
+                }, {
+                  "name" : "arg2",
+                  "value" : "Exit For Loop"
+                } ],
+                "stepsCount" : 1,
+                "attachmentsCount" : 1,
+                "shouldDisplayMessage" : false,
+                "hasContent" : true
+              } ],
+              "attachments" : [ ],
+              "parameters" : [ ],
+              "stepsCount" : 9,
+              "attachmentsCount" : 10,
+              "shouldDisplayMessage" : false,
+              "hasContent" : true
+            } ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 10,
+            "attachmentsCount" : 10,
+            "shouldDisplayMessage" : false,
+            "hasContent" : true
+          }, {
+            "name" : "BuiltIn.Run Keyword If",
+            "time" : {
+              "start" : 1743194411351,
+              "stop" : 1743194411352,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "statusMessage" : "ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "arg1",
+              "value" : "${still_visible}"
+            }, {
+              "name" : "arg2",
+              "value" : "Log"
+            }, {
+              "name" : "arg3",
+              "value" : "Element still visible after 3 attempts."
+            } ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : true,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "arg1",
+            "value" : "${locator}"
+          } ],
+          "stepsCount" : 16,
+          "attachmentsCount" : 15,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "arg1",
+          "value" : "${has_accessibility} or ${has_id}"
+        }, {
+          "name" : "arg2",
+          "value" : "Flow With ID Or Accessibility ID"
+        }, {
+          "name" : "arg3",
+          "value" : "${locator}"
+        }, {
+          "name" : "arg4",
+          "value" : "ELSE"
+        }, {
+          "name" : "arg5",
+          "value" : "Flow Without ID Or Accessibility ID"
+        }, {
+          "name" : "arg6",
+          "value" : "${locator}"
+        } ],
+        "stepsCount" : 17,
+        "attachmentsCount" : 15,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "accessibility_id=logout, Sign out"
+      } ],
+      "stepsCount" : 22,
+      "attachmentsCount" : 17,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibrary.Wait Until Page Contains",
+      "time" : {
+        "start" : 1743194411352,
+        "stop" : 1743194427053,
+        "duration" : 15701
+      },
+      "status" : "failed",
+      "statusMessage" : "Text 'Create your account' did not appear in 15 seconds",
+      "steps" : [ {
+        "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+        "time" : {
+          "start" : 1743194426624,
+          "stop" : 1743194427051,
+          "duration" : 427
+        },
+        "status" : "failed",
+        "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+        "steps" : [ ],
+        "attachments" : [ {
+          "name" : "screenshot",
+          "type" : "image/jpg",
+          "size" : 0
+        }, {
+          "uid" : "979676b88698d09d",
+          "name" : "Keyword Log",
+          "source" : "979676b88698d09d.html",
+          "type" : "text/html",
+          "size" : 144753
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "c8c7178d396ff001",
+        "name" : "Keyword Log",
+        "source" : "c8c7178d396ff001.html",
+        "type" : "text/html",
+        "size" : 21699
+      } ],
+      "parameters" : [ {
+        "name" : "arg1",
+        "value" : "Create your account"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    }, {
+      "name" : "AppiumLibraryHelper.Capture Page Screenshot",
+      "time" : {
+        "start" : 1743194427053,
+        "stop" : 1743194427443,
+        "duration" : 390
+      },
+      "status" : "failed",
+      "statusMessage" : "TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "steps" : [ ],
+      "attachments" : [ {
+        "name" : "screenshot",
+        "type" : "image/jpg",
+        "size" : 0
+      }, {
+        "uid" : "4c333630514a9edd",
+        "name" : "Keyword Log",
+        "source" : "4c333630514a9edd.html",
+        "type" : "text/html",
+        "size" : 144753
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 75,
+    "attachmentsCount" : 61,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Tests"
+  }, {
+    "name" : "subSuite",
+    "value" : "Login"
+  }, {
+    "name" : "framework",
+    "value" : "robotframework"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1053-481"
+  }, {
+    "name" : "thread",
+    "value" : "0-4227418e0dfb45039c1d16e6220617c7"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "login" ]
+  },
+  "source" : "310eff77a1757707.json",
+  "parameterValues" : [ ]
+}
