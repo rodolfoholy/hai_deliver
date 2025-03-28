@@ -3,16 +3,33 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
+      "name" : "Text 'Start manually' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'Log out' did not appear in 15 seconds\n\n5) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "children" : [ {
+        "name" : "Login with valid user and do a Estimate and Proposal flow",
+        "uid" : "519e4f2f1e339eb0",
+        "parentUid" : "084e558533a7fc70d507d3a26fdb5e01",
+        "status" : "failed",
+        "time" : {
+          "start" : 1743195028005,
+          "stop" : 1743195202696,
+          "duration" : 174691
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "084e558533a7fc70d507d3a26fdb5e01"
+    }, {
       "name" : "Text 'Log in' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'QA' did not appear in 15 seconds\n\n5) Text 'Delete account' did not appear in 15 seconds\n\n6) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n8) Text 'All the data associated with your account will automatically be deleted. This action cannot be undone.' did not appear in 15 seconds\n\n9) ValueError: Element locator 'accessibility_id=Delete' did not match any elements.\n\n10) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "children" : [ {
         "name" : "Login with valid user and complete the onboarding",
-        "uid" : "67eca7836f840719",
+        "uid" : "956284c2ececa8e6",
         "parentUid" : "1f2001c4cd68c2dd9c4a2014f417a674",
         "status" : "failed",
         "time" : {
-          "start" : 1743194137678,
-          "stop" : 1743194283518,
-          "duration" : 145840
+          "start" : 1743195028019,
+          "stop" : 1743195176239,
+          "duration" : 148220
         },
         "flaky" : false,
         "newFailed" : false,
@@ -20,35 +37,22 @@
       } ],
       "uid" : "1f2001c4cd68c2dd9c4a2014f417a674"
     }, {
-      "name" : "Text 'Log in' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'Log out' did not appear in 15 seconds\n\n5) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "name" : "Text 'Irvine, CA, USA' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) Text 'Log out' did not appear in 15 seconds\n\n3) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n4) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n5) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n6) Text 'Create your account' did not appear in 15 seconds\n\n7) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "children" : [ {
-        "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "4fde35002a42bfbd",
-        "parentUid" : "012b33104dfc2c079cb4746fb9462a19",
-        "status" : "failed",
-        "time" : {
-          "start" : 1743194137686,
-          "stop" : 1743194287308,
-          "duration" : 149622
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "310eff77a1757707",
-        "parentUid" : "012b33104dfc2c079cb4746fb9462a19",
+        "uid" : "a9e956eb6fe58309",
+        "parentUid" : "c0e7f23d60d41bf2c2b21c5c2abc7d8a",
         "status" : "failed",
         "time" : {
-          "start" : 1743194287314,
-          "stop" : 1743194427444,
-          "duration" : 140130
+          "start" : 1743195202702,
+          "stop" : 1743195379570,
+          "duration" : 176868
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "012b33104dfc2c079cb4746fb9462a19"
+      "uid" : "c0e7f23d60d41bf2c2b21c5c2abc7d8a"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ],
