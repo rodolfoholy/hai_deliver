@@ -28,7 +28,6 @@ Given the user start the application
 
 And he went to the log in screen
     Handle Element Based On Locator     Log in
-    Handle Element Based On Locator     Log in
     Wait Until Page Contains            Login methods:      8
 
 When he insert the phone number to log in
