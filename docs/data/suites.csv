@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"failed","Fri Mar 28 20:35:37 UTC 2025","Fri Mar 28 20:38:03 UTC 2025","145840","","Tests","Onboard","","","Login with valid user and complete the onboarding",""
-"failed","Fri Mar 28 20:38:07 UTC 2025","Fri Mar 28 20:40:27 UTC 2025","140130","","Tests","Login","","","Login with valid user and create a new client and do a estimate for this client",""
-"failed","Fri Mar 28 20:35:37 UTC 2025","Fri Mar 28 20:38:07 UTC 2025","149622","","Tests","Login","","","Login with valid user and do a Estimate and Proposal flow",""
+"failed","Fri Mar 28 20:53:22 UTC 2025","Fri Mar 28 20:56:19 UTC 2025","176868","","Tests","Login","","","Login with valid user and create a new client and do a estimate for this client",""
+"failed","Fri Mar 28 20:50:28 UTC 2025","Fri Mar 28 20:52:56 UTC 2025","148220","","Tests","Onboard","","","Login with valid user and complete the onboarding",""
+"failed","Fri Mar 28 20:50:28 UTC 2025","Fri Mar 28 20:53:22 UTC 2025","174691","","Tests","Login","","","Login with valid user and do a Estimate and Proposal flow",""
