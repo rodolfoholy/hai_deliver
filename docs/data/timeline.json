@@ -1,56 +1,56 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "fv-az1204-303",
+    "name" : "fv-az890-773",
     "children" : [ {
-      "name" : "0-6b96f925ded4469d9cd6a71c3ed39874",
+      "name" : "0-2cd8fc8b985c4086ab1e22c9bfb03c28",
       "children" : [ {
-        "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "a9e956eb6fe58309",
-        "parentUid" : "c779c27ae990636c17f7bb5e634432b7",
+        "name" : "Login with valid user and do a Estimate and Proposal flow",
+        "uid" : "95f97bc91d2efabc",
+        "parentUid" : "96080f695602285317d2987c0442d056",
         "status" : "failed",
         "time" : {
-          "start" : 1743195202702,
-          "stop" : 1743195379570,
-          "duration" : 176868
+          "start" : 1743211399724,
+          "stop" : 1743211749342,
+          "duration" : 349618
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "519e4f2f1e339eb0",
-        "parentUid" : "c779c27ae990636c17f7bb5e634432b7",
+        "name" : "Login with valid user and create a new client and do a estimate for this client",
+        "uid" : "c6206db6e28f8573",
+        "parentUid" : "96080f695602285317d2987c0442d056",
         "status" : "failed",
         "time" : {
-          "start" : 1743195028005,
-          "stop" : 1743195202696,
-          "duration" : 174691
+          "start" : 1743211749349,
+          "stop" : 1743212098097,
+          "duration" : 348748
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c779c27ae990636c17f7bb5e634432b7"
+      "uid" : "96080f695602285317d2987c0442d056"
     }, {
-      "name" : "1-d79cfccd9f4f4d55963c703e524700cc",
+      "name" : "1-62b6b0770ed14c38ad136e5996723f22",
       "children" : [ {
         "name" : "Login with valid user and complete the onboarding",
-        "uid" : "956284c2ececa8e6",
-        "parentUid" : "9e1f73a9e42c984eee80c8738925a77d",
+        "uid" : "dd44925456fcde7d",
+        "parentUid" : "44f732679406dd0be3bdea9bf173972e",
         "status" : "failed",
         "time" : {
-          "start" : 1743195028019,
-          "stop" : 1743195176239,
-          "duration" : 148220
+          "start" : 1743211399733,
+          "stop" : 1743211552530,
+          "duration" : 152797
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "9e1f73a9e42c984eee80c8738925a77d"
+      "uid" : "44f732679406dd0be3bdea9bf173972e"
     } ],
-    "uid" : "a75e355264e57d3eb408ffc3f0a794bb"
+    "uid" : "f928a76ec6237e1fcf01b37182a800be"
   } ],
   "name" : "timeline"
 }
