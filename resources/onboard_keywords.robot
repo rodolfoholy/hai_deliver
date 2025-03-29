@@ -24,18 +24,10 @@ And do the sign up
     Handle Element Based On Locator     accessibility_id=Get Started Free
     Wait Until Page Contains            Please verify your account      8
     Press Keycode       8
-    Sleep    1
     Press Keycode       8
-    Sleep    1
-    # Press Keycode       145
     Press Keycode       9
-    Sleep    1
-    # Press Keycode       145
     Press Keycode       9
-    Sleep    1
-    # Press Keycode       145
     Press Keycode       10
-    Sleep    1
     Press Keycode       10
     Wait Until Page Contains            Got it    20
     Handle Element Based On Locator     accessibility_id=Got it
@@ -89,11 +81,8 @@ And executes the login for a onboard user
 
 When the user was logged in and go to complete the onboarding
     Wait Until Element Is Visible       accessibility_id=Clients
-    # Handle Element Based On Locator     Complete your onboarding
     ${sub_menu}                         Run Keyword And Return Status    Wait Until Page Contains    Your free trial has expired! Subscribe to unlock all features    5
-    # ${sub_menu}                         Run Keyword And Return Status    Handle Element Based On Locator  7
     Run Keyword If                      '${sub_menu}'=='True'           Go Back
-    # Run Keyword If                      '${sub_menu}'=='False'          Handle Element Based On Locator     Complete your onboarding
     And the user click on Send a proposal
     And the user click on Send an invoice
     And the user click on Create an AI preset

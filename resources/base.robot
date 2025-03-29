@@ -60,11 +60,6 @@ Quit all
     Sleep                           1
     Run Keyword And Ignore Error    Close Application
 
-# End Session
-#     ${logout}=                      Run Keyword And Return Status          Element Text Should Be           id=br.com.enjoei.app.silver:id/tabBarItemUserText           entrar
-#     Run Keyword If                  '${logout}'=='False'                   Logout account
-#     Wait Until Keyword Succeeds     6x      3 sec       Quit all
-
 Start Session
     ${run_local_machine}            Run Keyword And Return Status          Variable Should Not Exist        ${local_machine}
     Run Keyword If                  '${run_local_machine}'=='True'         Run in Browserstack
