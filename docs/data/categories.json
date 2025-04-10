@@ -6,13 +6,13 @@
       "name" : "Text 'Start manually' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'Log out' did not appear in 15 seconds\n\n5) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "children" : [ {
         "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "519e4f2f1e339eb0",
+        "uid" : "95f97bc91d2efabc",
         "parentUid" : "084e558533a7fc70d507d3a26fdb5e01",
         "status" : "failed",
         "time" : {
-          "start" : 1743195028005,
-          "stop" : 1743195202696,
-          "duration" : 174691
+          "start" : 1743211399724,
+          "stop" : 1743211749342,
+          "duration" : 349618
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +23,13 @@
       "name" : "Text 'Log in' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'QA' did not appear in 15 seconds\n\n5) Text 'Delete account' did not appear in 15 seconds\n\n6) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n8) Text 'All the data associated with your account will automatically be deleted. This action cannot be undone.' did not appear in 15 seconds\n\n9) ValueError: Element locator 'accessibility_id=Delete' did not match any elements.\n\n10) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "children" : [ {
         "name" : "Login with valid user and complete the onboarding",
-        "uid" : "956284c2ececa8e6",
+        "uid" : "dd44925456fcde7d",
         "parentUid" : "1f2001c4cd68c2dd9c4a2014f417a674",
         "status" : "failed",
         "time" : {
-          "start" : 1743195028019,
-          "stop" : 1743195176239,
-          "duration" : 148220
+          "start" : 1743211399733,
+          "stop" : 1743211552530,
+          "duration" : 152797
         },
         "flaky" : false,
         "newFailed" : false,
@@ -40,13 +40,13 @@
       "name" : "Text 'Irvine, CA, USA' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) Text 'Log out' did not appear in 15 seconds\n\n3) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n4) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n5) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n6) Text 'Create your account' did not appear in 15 seconds\n\n7) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "children" : [ {
         "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "a9e956eb6fe58309",
+        "uid" : "c6206db6e28f8573",
         "parentUid" : "c0e7f23d60d41bf2c2b21c5c2abc7d8a",
         "status" : "failed",
         "time" : {
-          "start" : 1743195202702,
-          "stop" : 1743195379570,
-          "duration" : 176868
+          "start" : 1743211749349,
+          "stop" : 1743212098097,
+          "duration" : 348748
         },
         "flaky" : false,
         "newFailed" : false,
