@@ -3,46 +3,46 @@
   "children" : [ {
     "name" : "Tests",
     "children" : [ {
-      "name" : "Login",
+      "name" : "Estimate",
       "children" : [ {
         "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "95f97bc91d2efabc",
-        "parentUid" : "a774a71ccc6ef889a7aeb491d8236ab9",
+        "uid" : "e19b3bc56a65ca1c",
+        "parentUid" : "84513ae211cec7ddf7df87356ce4d622",
         "status" : "failed",
         "time" : {
-          "start" : 1743211399724,
-          "stop" : 1743211749342,
-          "duration" : 349618
+          "start" : 1744282095474,
+          "stop" : 1744282208754,
+          "duration" : 113280
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "c6206db6e28f8573",
-        "parentUid" : "a774a71ccc6ef889a7aeb491d8236ab9",
+        "uid" : "ae7f54e0bd9b5e1d",
+        "parentUid" : "84513ae211cec7ddf7df87356ce4d622",
         "status" : "failed",
         "time" : {
-          "start" : 1743211749349,
-          "stop" : 1743212098097,
-          "duration" : 348748
+          "start" : 1744282208762,
+          "stop" : 1744282373489,
+          "duration" : 164727
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "a774a71ccc6ef889a7aeb491d8236ab9"
+      "uid" : "84513ae211cec7ddf7df87356ce4d622"
     }, {
       "name" : "Onboard",
       "children" : [ {
         "name" : "Login with valid user and complete the onboarding",
-        "uid" : "dd44925456fcde7d",
+        "uid" : "41e3934c5bd102a3",
         "parentUid" : "352423a7311cd025c6b96860cf65be49",
         "status" : "failed",
         "time" : {
-          "start" : 1743211399733,
-          "stop" : 1743211552530,
-          "duration" : 152797
+          "start" : 1744282095526,
+          "stop" : 1744282233815,
+          "duration" : 138289
         },
         "flaky" : false,
         "newFailed" : false,

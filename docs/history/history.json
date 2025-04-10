@@ -9,17 +9,17 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dd44925456fcde7d",
+      "uid" : "41e3934c5bd102a3",
       "status" : "failed",
-      "statusDetails" : "Text 'Log in' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'QA' did not appear in 15 seconds\n\n5) Text 'Delete account' did not appear in 15 seconds\n\n6) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=Delete account, chevron_right' did not match any elements.\n\n8) Text 'All the data associated with your account will automatically be deleted. This action cannot be undone.' did not appear in 15 seconds\n\n9) ValueError: Element locator 'accessibility_id=Delete' did not match any elements.\n\n10) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "statusDetails" : "Text 'Unlock and Edit' did not appear in 8 seconds",
       "time" : {
-        "start" : 1743211399733,
-        "stop" : 1743211552530,
-        "duration" : 152797
+        "start" : 1744282095526,
+        "stop" : 1744282233815,
+        "duration" : 138289
       }
     } ]
   },
-  "3b7b1901ebfa4f976ceb612e0ef33390" : {
+  "770fadb1b300fbb5477f61211b10f7dd" : {
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
@@ -29,17 +29,17 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c6206db6e28f8573",
+      "uid" : "ae7f54e0bd9b5e1d",
       "status" : "failed",
-      "statusDetails" : "Text 'Irvine, CA, USA' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) Text 'Log out' did not appear in 15 seconds\n\n3) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n4) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n5) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n6) Text 'Create your account' did not appear in 15 seconds\n\n7) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "statusDetails" : "ValueError: Element locator 'xpath=//*[contains(@text,\"Use Handoff AI\")]' did not match any elements.\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n4) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n5) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "time" : {
-        "start" : 1743211749349,
-        "stop" : 1743212098097,
-        "duration" : 348748
+        "start" : 1744282208762,
+        "stop" : 1744282373489,
+        "duration" : 164727
       }
     } ]
   },
-  "7dfd68c5c2a20bc11abc3f978bea0e84" : {
+  "b411cf5a60bc5737b84455cd83af58ee" : {
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "95f97bc91d2efabc",
+      "uid" : "e19b3bc56a65ca1c",
       "status" : "failed",
-      "statusDetails" : "Text 'Start manually' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n4) Text 'Log out' did not appear in 15 seconds\n\n5) ValueError: Element locator '//*[contains(@text,\"Log out\")]' did not match any elements.\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "statusDetails" : "Text 'Estimates' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n4) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n5) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "time" : {
-        "start" : 1743211399724,
-        "stop" : 1743211749342,
-        "duration" : 349618
+        "start" : 1744282095474,
+        "stop" : 1744282208754,
+        "duration" : 113280
       }
     } ]
   }
