@@ -1,35 +1,19 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "Text 'Start manually' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n2) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n3) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n4) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n5) Text 'Create your account' did not appear in 15 seconds\n\n6) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
-      "children" : [ {
-        "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "ed7e798eb8362e16",
-        "parentUid" : "f4a3bd0ef581c6dfe9a4c40344a14d9b",
-        "status" : "failed",
-        "time" : {
-          "start" : 1744288999848,
-          "stop" : 1744289129562,
-          "duration" : 129714
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f4a3bd0ef581c6dfe9a4c40344a14d9b"
-    }, {
       "name" : "Text 'Complete your onboarding' did not appear in 15 seconds",
       "children" : [ {
         "name" : "Login with valid user and complete the onboarding",
-        "uid" : "1465cf8875267291",
+        "uid" : "39fefb8429856fd3",
         "parentUid" : "553e3e236227a5e42a362b4449345ed5",
         "status" : "failed",
         "time" : {
-          "start" : 1744288999851,
-          "stop" : 1744289282249,
-          "duration" : 282398
+          "start" : 1744290075228,
+          "stop" : 1744290342638,
+          "duration" : 267410
         },
         "flaky" : false,
         "newFailed" : false,
@@ -37,24 +21,40 @@
       } ],
       "uid" : "553e3e236227a5e42a362b4449345ed5"
     }, {
-      "name" : "ValueError: Element locator 'xpath=//android.widget.EditText' did not match any elements.\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n2) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n3) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n4) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n5) Text 'Create your account' did not appear in 15 seconds\n\n6) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "name" : "Text 'Start manually' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n2) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n3) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n4) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n5) Text 'Create your account' did not appear in 15 seconds\n\n6) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "children" : [ {
-        "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "68a259496f4c516c",
-        "parentUid" : "d83ec53fe059cd8933cfd5403fa44c52",
+        "name" : "Login with valid user and do a Estimate and Proposal flow",
+        "uid" : "5ee41e88c5562252",
+        "parentUid" : "f4a3bd0ef581c6dfe9a4c40344a14d9b",
         "status" : "failed",
         "time" : {
-          "start" : 1744289129571,
-          "stop" : 1744289401749,
-          "duration" : 272178
+          "start" : 1744290075360,
+          "stop" : 1744290191194,
+          "duration" : 115834
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "d83ec53fe059cd8933cfd5403fa44c52"
+      "uid" : "f4a3bd0ef581c6dfe9a4c40344a14d9b"
+    }, {
+      "name" : "ValueError: Element locator 'xpath=//*[contains(@text,\"Use Handoff AI\")]' did not match any elements.\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n4) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n5) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "children" : [ {
+        "name" : "Login with valid user and create a new client and do a estimate for this client",
+        "uid" : "faa76eb48f5128ce",
+        "parentUid" : "da81c9e927a63801f68b603c639b2716",
+        "status" : "failed",
+        "time" : {
+          "start" : 1744290191203,
+          "stop" : 1744290897356,
+          "duration" : 706153
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "da81c9e927a63801f68b603c639b2716"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ],
-  "name" : "categories"
+  } ]
 }
