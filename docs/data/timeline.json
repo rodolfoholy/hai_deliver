@@ -1,56 +1,56 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "fv-az835-230",
+    "name" : "fv-az1783-265",
     "children" : [ {
-      "name" : "0-8003177418914f0d912b52ac9af3a650",
+      "name" : "0-5982bd0e59794f6cb25bd9faa6b670ed",
       "children" : [ {
-        "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "e19b3bc56a65ca1c",
-        "parentUid" : "b266e5673e2aed5014c37a5120e65de2",
+        "name" : "Login with valid user and complete the onboarding",
+        "uid" : "965e4ada00c06c54",
+        "parentUid" : "a80fa245b05bb8819ae49697f9cc7aa9",
         "status" : "failed",
         "time" : {
-          "start" : 1744282095474,
-          "stop" : 1744282208754,
-          "duration" : 113280
+          "start" : 1744282934256,
+          "stop" : 1744283452185,
+          "duration" : 517929
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a80fa245b05bb8819ae49697f9cc7aa9"
+    }, {
+      "name" : "1-f9217a2928e947ecbe3a556ec8d52598",
+      "children" : [ {
+        "name" : "Login with valid user and create a new client and do a estimate for this client",
+        "uid" : "6c4b5e8191544b8b",
+        "parentUid" : "abe9e1df0904517d2b9353f5337b1e42",
+        "status" : "failed",
+        "time" : {
+          "start" : 1744283117768,
+          "stop" : 1744283207213,
+          "duration" : 89445
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "ae7f54e0bd9b5e1d",
-        "parentUid" : "b266e5673e2aed5014c37a5120e65de2",
+        "name" : "Login with valid user and do a Estimate and Proposal flow",
+        "uid" : "431d322bcc47027e",
+        "parentUid" : "abe9e1df0904517d2b9353f5337b1e42",
         "status" : "failed",
         "time" : {
-          "start" : 1744282208762,
-          "stop" : 1744282373489,
-          "duration" : 164727
+          "start" : 1744282934314,
+          "stop" : 1744283117760,
+          "duration" : 183446
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "b266e5673e2aed5014c37a5120e65de2"
-    }, {
-      "name" : "1-07282ad3bfc743ee9e64c03bda6feabe",
-      "children" : [ {
-        "name" : "Login with valid user and complete the onboarding",
-        "uid" : "41e3934c5bd102a3",
-        "parentUid" : "8566ce61323fbda79e37a1193c03a96a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1744282095526,
-          "stop" : 1744282233815,
-          "duration" : 138289
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "8566ce61323fbda79e37a1193c03a96a"
+      "uid" : "abe9e1df0904517d2b9353f5337b1e42"
     } ],
-    "uid" : "25cb032e39e0da9f174b1cf702f2f437"
+    "uid" : "31b83585e84c42fab5fbf2c6cf38f40b"
   } ],
   "name" : "timeline"
 }

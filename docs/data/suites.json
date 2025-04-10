@@ -3,52 +3,52 @@
   "children" : [ {
     "name" : "Tests",
     "children" : [ {
-      "name" : "Estimate",
-      "children" : [ {
-        "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "e19b3bc56a65ca1c",
-        "parentUid" : "84513ae211cec7ddf7df87356ce4d622",
-        "status" : "failed",
-        "time" : {
-          "start" : 1744282095474,
-          "stop" : 1744282208754,
-          "duration" : 113280
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "ae7f54e0bd9b5e1d",
-        "parentUid" : "84513ae211cec7ddf7df87356ce4d622",
-        "status" : "failed",
-        "time" : {
-          "start" : 1744282208762,
-          "stop" : 1744282373489,
-          "duration" : 164727
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "84513ae211cec7ddf7df87356ce4d622"
-    }, {
       "name" : "Onboard",
       "children" : [ {
         "name" : "Login with valid user and complete the onboarding",
-        "uid" : "41e3934c5bd102a3",
+        "uid" : "965e4ada00c06c54",
         "parentUid" : "352423a7311cd025c6b96860cf65be49",
         "status" : "failed",
         "time" : {
-          "start" : 1744282095526,
-          "stop" : 1744282233815,
-          "duration" : 138289
+          "start" : 1744282934256,
+          "stop" : 1744283452185,
+          "duration" : 517929
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "352423a7311cd025c6b96860cf65be49"
+    }, {
+      "name" : "Estimate",
+      "children" : [ {
+        "name" : "Login with valid user and do a Estimate and Proposal flow",
+        "uid" : "431d322bcc47027e",
+        "parentUid" : "84513ae211cec7ddf7df87356ce4d622",
+        "status" : "failed",
+        "time" : {
+          "start" : 1744282934314,
+          "stop" : 1744283117760,
+          "duration" : 183446
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login with valid user and create a new client and do a estimate for this client",
+        "uid" : "6c4b5e8191544b8b",
+        "parentUid" : "84513ae211cec7ddf7df87356ce4d622",
+        "status" : "failed",
+        "time" : {
+          "start" : 1744283117768,
+          "stop" : 1744283207213,
+          "duration" : 89445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "84513ae211cec7ddf7df87356ce4d622"
     } ],
     "uid" : "902c53be0755ed2c5e3076a8d5ce2e49"
   } ],
