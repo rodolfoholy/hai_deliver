@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "41e3934c5bd102a3",
+      "uid" : "965e4ada00c06c54",
       "status" : "failed",
       "statusDetails" : "Text 'Unlock and Edit' did not appear in 8 seconds",
       "time" : {
-        "start" : 1744282095526,
-        "stop" : 1744282233815,
-        "duration" : 138289
+        "start" : 1744282934256,
+        "stop" : 1744283452185,
+        "duration" : 517929
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ae7f54e0bd9b5e1d",
+      "uid" : "6c4b5e8191544b8b",
       "status" : "failed",
-      "statusDetails" : "ValueError: Element locator 'xpath=//*[contains(@text,\"Use Handoff AI\")]' did not match any elements.\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n4) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n5) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
+      "statusDetails" : "Text 'By signing up you consent to receive marketing communications such as email and SMS from Handoff as well as to its Terms of Use and Privacy Policy.' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n4) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n5) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n8) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "time" : {
-        "start" : 1744282208762,
-        "stop" : 1744282373489,
-        "duration" : 164727
+        "start" : 1744283117768,
+        "stop" : 1744283207213,
+        "duration" : 89445
       }
     } ]
   },
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e19b3bc56a65ca1c",
+      "uid" : "431d322bcc47027e",
       "status" : "failed",
       "statusDetails" : "Text 'Estimates' did not appear in 15 seconds\n\nAlso teardown failed:\nSeveral failures occurred:\n\n1) Text 'Estimates' did not appear in 15 seconds\n\n2) ValueError: Element locator 'accessibility_id=settings' did not match any elements.\n\n3) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n4) ValueError: Element locator 'xpath=//*[contains(@text,\"Log out\")]' did not match any elements.\n\n5) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n6) ValueError: Element locator 'accessibility_id=logout, Sign out' did not match any elements.\n\n7) AttributeError: 'NoneType' object has no attribute 'is_displayed'\n\n8) Text 'Create your account' did not appear in 15 seconds\n\n9) TypeError: stat: path should be string, bytes, os.PathLike or integer, not NoneType",
       "time" : {
-        "start" : 1744282095474,
-        "stop" : 1744282208754,
-        "duration" : 113280
+        "start" : 1744282934314,
+        "stop" : 1744283117760,
+        "duration" : 183446
       }
     } ]
   }
