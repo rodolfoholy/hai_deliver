@@ -5,7 +5,7 @@ Test Teardown   Logout and validate session termination
 
 ***Test Cases***
 Login with valid user and do a Estimate and Proposal flow
-    [tags]              login
+    [tags]              estimate_proposal
     [Setup]             Start Session
 
     Given the user start the application and attempt to log in with a user who already did the onboarding
@@ -14,7 +14,7 @@ Login with valid user and do a Estimate and Proposal flow
     Then the user verifies if the proposal was edited
 
 Login with valid user and create a new client and do a estimate for this client
-    [tags]              login
+    [tags]              new_client_estimate
     [Setup]             Start Session
 
     Given the user start the application and attempt to log in with a user who already did the onboarding

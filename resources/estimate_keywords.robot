@@ -51,6 +51,7 @@ And he insert the OTP code
 
 When the user was logged in and do a new estimate
     Wait Until Page Contains            Estimates
+    Tap With Positions                  923    1508
     Handle Element Based On Locator     accessibility_id=add, New
     Wait Until Page Contains            Start manually        
     @{estimate_btm_sheet}    Get Webelements                     xpath=${edit_text}
@@ -127,12 +128,16 @@ When the user was logged in and go to create a new client and do a estimate for 
     Input Text                          ${client_btm_sheet}[0]        Cintia
     Input Text                          ${client_btm_sheet}[1]        cinokado@gmail.com
     Input Text                          ${client_btm_sheet}[2]        5184232588
-    Input Text                          ${client_btm_sheet}[3]        Irvine
-    Handle Element Based On Locator     Irvine, CA, USA
+    Input Text                          ${client_btm_sheet}[3]        Irvine, CA, USA
+    Wait Until Page Contains            Cintia
+    Click Element                       accessibility_id=Save
     Wait Until Page Contains            Cintia
 
 Then the user creates a new client and do a estimate for this client
-    Handle Element Based On Locator     accessibility_id=Add Estimate
+    Handle Element Based On Locator     Cintia
+    Wait Until Page Contains            Cintia
+    Handle Element Based On Locator     accessibility_id=add, New
+    Wait Until Page Contains            Start manually
     Handle Element Based On Locator     Enter a title
     @{client_btm_sheet}    Get Webelements                     xpath=${edit_text}
     Input Text                          ${client_btm_sheet}[0]        New Client Estimate

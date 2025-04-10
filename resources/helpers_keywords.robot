@@ -19,39 +19,50 @@ TypeOnKeyboard
 Handle Element Based On Locator
     [Arguments]    ${locator}
     ${has_accessibility}=    Run Keyword And Return Status    Should Contain    ${locator}    accessibility_id=
+    ${has_xpath}=    Run Keyword And Return Status    Should Contain    ${locator}    xpath=
     ${has_id}=    Run Keyword And Return Status    Should Contain    ${locator}    id=
-
-    Run Keyword If    ${has_accessibility} or ${has_id}    Flow With ID Or Accessibility ID    ${locator}
+        
+    Run Keyword If    ${has_accessibility} or ${has_id} or ${has_xpath}   Flow With ID Or Accessibility ID    ${locator}
     ...               ELSE    Flow Without ID Or Accessibility ID    ${locator}
 
 Flow With ID Or Accessibility ID
-    [Arguments]    ${locator}
+    [Arguments]    ${element}
+    ${update}=    Run Keyword And Return Status    Text Should Be Visible    New updates available!
+    IF    "${update}"=="True"
+        Click Text    Ask me later
+    END
+    ${locator}=    Get Webelement    ${element}
     Element Should Be Visible    ${locator}
     Log    Starting click with retry logic for: ${locator}
-
     ${still_visible}=    Set Variable    ${True}
-    FOR    ${index}    IN RANGE    3
+    FOR    ${index}    IN RANGE    5
         Log    Attempt ${index + 1} to click element: ${locator}
-        Click Element    ${locator}
+        Run Keyword And Ignore Error     Click Element    ${locator}
         Sleep    1s
         ${still_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${locator}
         Run Keyword If    not ${still_visible}    Exit For Loop
     END
-
-    Run Keyword If    ${still_visible}    Log    Element still visible after 3 attempts.
+    Run Keyword If    ${still_visible}    Log    Element still visible after 5 attempts.
 
 Flow Without ID Or Accessibility ID
-    [Arguments]    ${locator}
-    Wait Until Page Contains    ${locator}
+    [Arguments]    ${element}
+    ${update}=    Run Keyword And Return Status    Text Should Be Visible    New updates available!
+    IF    "${update}"=="True"
+        Click Text    Ask me later
+    END
+    ${locator}=    Get Webelement    xpath=//*[contains(@text,"${element}")]
+    Element Should Be Visible    ${locator}
     Log    Starting click with retry logic for: ${locator}
-
     ${still_visible}=    Set Variable    ${True}
-    FOR    ${index}    IN RANGE    3
+    FOR    ${index}    IN RANGE    5
         Log    Attempt ${index + 1} to click text: ${locator}
-        Click Text    ${locator}
+        Run Keyword And Ignore Error     Click Text    ${element}
         Sleep    1s
-        ${still_visible}=    Run Keyword And Return Status    Wait Until Page Contains    ${locator}
+        ${still_visible}=    Run Keyword And Return Status    Element Should Be Visible    ${locator}
         Run Keyword If    not ${still_visible}    Exit For Loop
     END
-
-    Run Keyword If    ${still_visible}    Log    Text still visible after 3 attempts.
+    ${update}=    Run Keyword And Return Status    Text Should Be Visible    New updates available!
+    IF    "${update}"=="True"
+        Click Text    Ask me later
+    END
+    Run Keyword If    ${still_visible}    Log    Text still visible after 5 attempts.

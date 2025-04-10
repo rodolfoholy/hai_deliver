@@ -10,9 +10,9 @@ Library     RequestsLibrary
 Library     String
 Library     ../Library/AppiumLibraryHelper.py
 
+Resource    estimate_keywords.robot
 Resource    helpers_keywords.robot
 Resource    logged_out_keywords.robot
-Resource    login_keywords.robot
 Resource    onboard_keywords.robot
 
 ***Variables***
@@ -78,7 +78,7 @@ Run in Browserstack
     ...                             build=${build}
     ...                             name=${TEST NAME}
     ...                             automationName=UiAutomator2
-    ...                             platformVersion=12.0
+    ...                             platformVersion=11.0
     ...                             deviceName=Google Pixel 5
     ...                             app=${APP_URL}
     ...                             browserstack.networkLogs=true

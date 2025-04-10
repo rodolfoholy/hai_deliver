@@ -1,11 +1,11 @@
 ***Settings***
 Resource        ../resources/base.robot
 
-Test Teardown   Delete the current user
+# Test Teardown   Delete the current user
 
 ***Test Cases***
 Login with valid user and complete the onboarding
-    [tags]              login
+    [tags]              login_and_onboard
     [Setup]             Start Session
 
     Given the user start the application and attempt to sign up
