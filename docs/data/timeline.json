@@ -1,56 +1,56 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "fv-az1783-265",
+    "name" : "fv-az2243-426",
     "children" : [ {
-      "name" : "0-5982bd0e59794f6cb25bd9faa6b670ed",
+      "name" : "1-a8fcd7dd98f04394a3176f6bbecca782",
       "children" : [ {
         "name" : "Login with valid user and complete the onboarding",
-        "uid" : "965e4ada00c06c54",
-        "parentUid" : "a80fa245b05bb8819ae49697f9cc7aa9",
+        "uid" : "1465cf8875267291",
+        "parentUid" : "2b134c4796aa860e38da16f181175544",
         "status" : "failed",
         "time" : {
-          "start" : 1744282934256,
-          "stop" : 1744283452185,
-          "duration" : 517929
+          "start" : 1744288999851,
+          "stop" : 1744289282249,
+          "duration" : 282398
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "a80fa245b05bb8819ae49697f9cc7aa9"
+      "uid" : "2b134c4796aa860e38da16f181175544"
     }, {
-      "name" : "1-f9217a2928e947ecbe3a556ec8d52598",
+      "name" : "0-2413f8b01a2e4b098ba89d89fea21f97",
       "children" : [ {
         "name" : "Login with valid user and create a new client and do a estimate for this client",
-        "uid" : "6c4b5e8191544b8b",
-        "parentUid" : "abe9e1df0904517d2b9353f5337b1e42",
+        "uid" : "68a259496f4c516c",
+        "parentUid" : "7e6182f9ac4abdc9d5b0271c2c474edb",
         "status" : "failed",
         "time" : {
-          "start" : 1744283117768,
-          "stop" : 1744283207213,
-          "duration" : 89445
+          "start" : 1744289129571,
+          "stop" : 1744289401749,
+          "duration" : 272178
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login with valid user and do a Estimate and Proposal flow",
-        "uid" : "431d322bcc47027e",
-        "parentUid" : "abe9e1df0904517d2b9353f5337b1e42",
+        "uid" : "ed7e798eb8362e16",
+        "parentUid" : "7e6182f9ac4abdc9d5b0271c2c474edb",
         "status" : "failed",
         "time" : {
-          "start" : 1744282934314,
-          "stop" : 1744283117760,
-          "duration" : 183446
+          "start" : 1744288999848,
+          "stop" : 1744289129562,
+          "duration" : 129714
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "abe9e1df0904517d2b9353f5337b1e42"
+      "uid" : "7e6182f9ac4abdc9d5b0271c2c474edb"
     } ],
-    "uid" : "31b83585e84c42fab5fbf2c6cf38f40b"
+    "uid" : "db6f57e397957654dc20da4397a88db7"
   } ],
   "name" : "timeline"
 }

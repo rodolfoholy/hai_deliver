@@ -1,30 +1,30 @@
 [ {
-  "uid" : "965e4ada00c06c54",
-  "name" : "Login with valid user and complete the onboarding",
-  "time" : {
-    "start" : 1744282934256,
-    "stop" : 1744283452185,
-    "duration" : 517929
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "6c4b5e8191544b8b",
-  "name" : "Login with valid user and create a new client and do a estimate for this client",
-  "time" : {
-    "start" : 1744283117768,
-    "stop" : 1744283207213,
-    "duration" : 89445
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "431d322bcc47027e",
+  "uid" : "ed7e798eb8362e16",
   "name" : "Login with valid user and do a Estimate and Proposal flow",
   "time" : {
-    "start" : 1744282934314,
-    "stop" : 1744283117760,
-    "duration" : 183446
+    "start" : 1744288999848,
+    "stop" : 1744289129562,
+    "duration" : 129714
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1465cf8875267291",
+  "name" : "Login with valid user and complete the onboarding",
+  "time" : {
+    "start" : 1744288999851,
+    "stop" : 1744289282249,
+    "duration" : 282398
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "68a259496f4c516c",
+  "name" : "Login with valid user and create a new client and do a estimate for this client",
+  "time" : {
+    "start" : 1744289129571,
+    "stop" : 1744289401749,
+    "duration" : 272178
   },
   "status" : "failed",
   "severity" : "normal"
