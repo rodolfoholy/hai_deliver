@@ -105,8 +105,8 @@ And the user click on Send a proposal
     Wait Until Page Contains            Share      8
     Click Element                       xpath=${seek_bar}
     Click Element                       accessibility_id=Send
-    ${estimate_menu}                    Run Keyword And Return Status    Wait Until Page Contains    Estimate Unavailable
-    ${unlock_menu}                      Run Keyword And Return Status    Wait Until Page Contains    Unlock and Edit
+    ${estimate_menu}                    Run Keyword And Return Status    Wait Until Page Contains    Estimate Unavailable    120
+    ${unlock_menu}                      Run Keyword And Return Status    Wait Until Page Contains    Unlock and Edit    
     IF    ${estimate_menu}=='True'
         Handle Element Based On Locator     accessibility_id=arrow_back
     ELSE IF    ${unlock_menu}=='True'
